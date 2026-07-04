@@ -1,0 +1,1702 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happ — Salud Preventiva Inteligente para tu Empresa</title>
+    <meta name="description" content="Happ digitaliza y potencia evaluaciones preventivas de salud corporativa en terreno, integrando datos clínicos e inteligencia artificial para cuidar a tus colaboradores.">
+    <meta name="keywords" content="salud preventiva, operativo de salud, happ, bienestar laboral, telemedicina, recetas medicas, empresa, colaboradores">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Iconify Icons -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════════════════
+     NAV BAR — Sticky glassmorphic
+════════════════════════════════════════════════════════════ -->
+<nav class="site-nav" id="main-nav">
+    <div class="nav-inner">
+        <a href="#" class="nav-logo" aria-label="Happ Home">
+            <img src="https://happ.aurealab.cl/wp-content/uploads/2021/12/LOGO-HAPP-sin-fondo.png" alt="Happ Logo">
+        </a>
+        <div class="nav-links" id="nav-links">
+            <a href="#home">Home</a>
+            <a href="#que-hacemos">¿Qué Hacemos?</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#happia">happIA</a>
+            <a href="#plataforma">Plataforma</a>
+            <a href="#testimonios">Testimonios</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+        <div class="nav-cta-row">
+            <a href="#contacto" class="nav-cta">Agendar Operativo</a>
+            <button class="hamburger" id="hamburger-btn" aria-label="Abrir menú" onclick="toggleMobileMenu()">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobile-menu">
+    <a href="#home" onclick="closeMobileMenu()">Home</a>
+    <a href="#que-hacemos" onclick="closeMobileMenu()">¿Qué Hacemos?</a>
+    <a href="#servicios" onclick="closeMobileMenu()">Servicios</a>
+    <a href="#happia" onclick="closeMobileMenu()">happIA</a>
+    <a href="#plataforma" onclick="closeMobileMenu()">Plataforma</a>
+    <a href="#testimonios" onclick="closeMobileMenu()">Testimonios</a>
+    <a href="#contacto" onclick="closeMobileMenu()">Contacto</a>
+    <a href="#contacto" class="nav-cta" onclick="closeMobileMenu()" style="text-align:center; margin-top:8px;">Agendar Operativo</a>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════════
+     HERO SECTION
+════════════════════════════════════════════════════════════ -->
+<section class="hero" id="home">
+    <div class="hero-bg-circle-1"></div>
+    <div class="hero-bg-circle-2"></div>
+    <!-- Premium glassmorphic background deco elements matching screenshot -->
+    <div class="hero-deco-ring"></div>
+    <iconify-icon icon="solar:letter-unread-bold-duotone" class="hero-deco-envelope"></iconify-icon>
+    <div class="hero-deco-sphere"></div>
+    
+    <div class="hero-inner">
+        <!-- Logo centered on top of the hero content -->
+        <div class="hero-logo-centered fade-up">
+            <img src="https://happ.aurealab.cl/wp-content/uploads/2021/12/LOGO-HAPP-sin-fondo.png" alt="Happ Logo">
+        </div>
+
+        <div class="hero-visual fade-up fade-up-d2">
+
+            <!-- Feature pill LEFT: Operativos Preventivo -->
+            <a href="#servicios" class="hero-feat-btn hfb-left">
+                <div class="hfb-icon-wrap hfb-blue">
+                    <iconify-icon icon="solar:shield-user-bold"></iconify-icon>
+                </div>
+                <div class="hfb-text">
+                    <span>Operativos Preventivo</span>
+                    <small>en terreno</small>
+                </div>
+                <iconify-icon icon="solar:alt-arrow-right-linear" class="hfb-arrow"></iconify-icon>
+            </a>
+
+            <!-- Centered Robot Mockup -->
+            <div class="hero-robot-wrap">
+                <img src="robot.png" alt="happIA Robot">
+            </div>
+
+            <!-- Feature pill RIGHT: Asistente de Salud happIA -->
+            <a href="#happia" class="hero-feat-btn hfb-right">
+                <div class="hfb-icon-wrap hfb-purple">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" style="display: block;">
+                        <path d="M7.45284 2.71266C7.8276 1.76244 9.1724 1.76245 9.54716 2.71267L10.7085 5.65732C10.8229 5.94743 11.0526 6.17707 11.3427 6.29148L14.2873 7.45284C15.2376 7.8276 15.2376 9.1724 14.2873 9.54716L11.3427 10.7085C11.0526 10.8229 10.8229 11.0526 10.7085 11.3427L9.54716 14.2873C9.1724 15.2376 7.8276 15.2376 7.45284 14.2873L6.29148 11.3427C6.17707 11.0526 5.94743 10.8229 5.65732 10.7085L2.71266 9.54716C1.76244 9.1724 1.76245 7.8276 2.71267 7.45284L5.65732 6.29148C5.94743 6.17707 6.17707 5.94743 6.29148 5.65732L7.45284 2.71266Z" fill="currentColor"></path>
+                        <path opacity="0.5" d="M16.9245 13.3916C17.1305 12.8695 17.8695 12.8695 18.0755 13.3916L18.9761 15.6753C19.039 15.8348 19.1652 15.961 19.3247 16.0239L21.6084 16.9245C22.1305 17.1305 22.1305 17.8695 21.6084 18.0755L19.3247 18.9761C19.1652 19.039 19.039 19.1652 18.9761 19.3247L18.0755 21.6084C17.8695 22.1305 17.1305 22.1305 16.9245 21.6084L16.0239 19.3247C15.961 19.1652 15.8348 19.039 15.6753 18.9761L13.3916 18.0755C12.8695 17.8695 12.8695 17.1305 13.3916 16.9245L15.6753 16.0239C15.8348 15.961 15.961 15.8348 16.0239 15.6753L16.9245 13.3916Z" fill="currentColor"></path>
+                    </svg>
+                </div>
+                <div class="hfb-text">
+                    <span>Asistente de Salud</span>
+                    <small>happIA</small>
+                </div>
+                <iconify-icon icon="solar:alt-arrow-right-linear" class="hfb-arrow"></iconify-icon>
+            </a>
+
+            <!-- Feature pill BOTTOM CENTER: Módulo seguimiento -->
+            <a href="#plataforma" class="hero-feat-btn hfb-bottom">
+                <div class="hfb-icon-wrap hfb-green">
+                    <iconify-icon icon="solar:chart-square-bold"></iconify-icon>
+                </div>
+                <div class="hfb-text">
+                    <span>Modulo seguimiento</span>
+                    <small>Pacientes crónicos</small>
+                </div>
+                <iconify-icon icon="solar:alt-arrow-right-linear" class="hfb-arrow"></iconify-icon>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     SOLUCIONES — FEATURES GRID
+════════════════════════════════════════════════════════════ -->
+<section class="features-section section" id="que-hacemos">
+    <div class="container">
+        <div class="text-center fade-up" style="max-width: 800px; margin: 0 auto 56px;">
+            <span class="section-label">Soluciones</span>
+            <h2 class="section-title">Soluciones de Salud <br><span>en Terreno</span></h2>
+            <p class="section-sub" style="font-weight: 700; margin-bottom: 24px; max-width: 100%;">Prevención inteligente que combina salud, tecnología y datos.</p>
+            <p style="color: var(--txt-sub); font-size: 16px; line-height: 1.8; margin-bottom: 20px;">En happ acercamos la salud a las personas mediante evaluaciones preventivas realizadas por profesionales clínicos, potenciadas por tecnología propia que digitaliza toda la experiencia. Cada intervención genera información útil para el colaborador y para la organización, transformando un operativo en una herramienta de gestión preventiva.</p>
+            <p style="color: var(--txt-sub); font-size: 16px; line-height: 1.8;">Nuestras soluciones se adaptan a las necesidades de cada organización y pueden combinarse para construir un programa preventivo completamente a la medida.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     ¿POR QUÉ HAPP? — 3 COLUMNS SECTION
+════════════════════════════════════════════════════════════ -->
+<section class="why-happ-section section" id="por-que-happ">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="text-center fade-up" style="max-width: 800px; margin: 0 auto 56px;">
+            <span class="section-label">Beneficios</span>
+            <h2 class="section-title">¿Por qué <span>happ</span>?</h2>
+            <p class="section-sub" style="font-weight: 700; margin-bottom: 24px; max-width: 100%;">Tecnología que potencia cada evaluación</p>
+            <p style="color: var(--txt-sub); font-size: 16px; line-height: 1.8;">No solo realizamos evaluaciones preventivas. Nuestra plataforma digital acompaña todo el proceso antes, durante y después del operativo, entregando una experiencia moderna para las personas y datos de alto valor para las organizaciones</p>
+        </div>
+
+        <!-- 3-Column Layout -->
+        <div class="why-happ-layout fade-up fade-up-d1">
+            <!-- Left Column: Durante el operativo -->
+            <div class="why-column why-left-col glass-card">
+                <div class="why-col-header">
+                    <h3>Durante el operativo</h3>
+                </div>
+                <ul class="why-list">
+                    <li>
+                        <iconify-icon icon="solar:check-circle-bold" class="check-icon"></iconify-icon>
+                        <span>Consentimiento informado digital</span>
+                    </li>
+                    <li>
+                        <iconify-icon icon="solar:check-circle-bold" class="check-icon"></iconify-icon>
+                        <span>Registro digital de cada participante</span>
+                    </li>
+                    <li>
+                        <iconify-icon icon="solar:check-circle-bold" class="check-icon"></iconify-icon>
+                        <span>Captura digital de resultados clínicos</span>
+                    </li>
+                    <li>
+                        <iconify-icon icon="solar:check-circle-bold" class="check-icon"></iconify-icon>
+                        <span>Profesionales de la salud especializados</span>
+                    </li>
+                    <li>
+                        <iconify-icon icon="solar:check-circle-bold" class="check-icon"></iconify-icon>
+                        <span>Evaluación clínica en terreno</span>
+                    </li>
+                    <li>
+                        <iconify-icon icon="solar:check-circle-bold" class="check-icon"></iconify-icon>
+                        <span>Plataforma conectada en tiempo real</span>
+                    </li>
+                    <li>
+                        <iconify-icon icon="solar:check-circle-bold" class="check-icon"></iconify-icon>
+                        <span>Atención rápida y estandarizada</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Center Column: Image -->
+            <div class="why-column why-center-col">
+                <div class="why-image-wrap">
+                    <img src="por-que-happ.png" alt="Tecnología Happ — Cada Evaluación Potenciada" class="why-image">
+                </div>
+            </div>
+
+            <!-- Right Column: Después del operativo -->
+            <div class="why-column why-right-col glass-card">
+                <div class="why-col-header">
+                    <h3>Después del operativo</h3>
+                </div>
+                <ul class="why-list">
+                    <li>
+                        <iconify-icon icon="solar:check-circle-bold" class="check-icon"></iconify-icon>
+                        <span>Resultados disponibles 24/7</span>
+                    </li>
+                    <li>
+                        <iconify-icon icon="solar:check-circle-bold" class="check-icon"></iconify-icon>
+                        <span>Acceso seguro desde la plataforma happ</span>
+                    </li>
+                    <li>
+                        <iconify-icon icon="solar:check-circle-bold" class="check-icon"></iconify-icon>
+                        <span>Historial de evaluaciones</span>
+                    </li>
+                    <li>
+                        <iconify-icon icon="solar:check-circle-bold" class="check-icon"></iconify-icon>
+                        <span>Recomendaciones y orientación personalizada</span>
+                    </li>
+                    <li>
+                        <iconify-icon icon="solar:check-circle-bold" class="check-icon"></iconify-icon>
+                        <span>Encuesta de satisfacción en línea</span>
+                    </li>
+                    <li>
+                        <iconify-icon icon="solar:check-circle-bold" class="check-icon"></iconify-icon>
+                        <span>Reportes ejecutivos para la empresa</span>
+                    </li>
+                    <li>
+                        <iconify-icon icon="solar:check-circle-bold" class="check-icon"></iconify-icon>
+                        <span>Información para programas preventivos y toma de decisiones</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     SERVICIOS — ACORDEÓN
+════════════════════════════════════════════════════════════ -->
+<section class="services-section section" id="servicios">
+    <div class="container">
+        <div class="fade-up" style="text-align: left; max-width: 800px; margin-bottom: 48px;">
+            <span class="section-label">Nuestros Servicios</span>
+            <h2 class="section-title">Así transformamos un operativo <br><span>en un programa de prevención</span></h2>
+            <p style="color: var(--txt-sub); font-size: 16px; line-height: 1.75; margin-top: 16px;">En happ creemos que un chequeo preventivo solo genera valor cuando se convierte en acciones concretas para las personas y en información útil para las organizaciones. Por eso combinamos atención presencial, tecnología y seguimiento digital para acompañar todo el proceso de prevención.</p>
+        </div>
+
+        <!-- Horizontal Timeline Process -->
+        <div class="process-timeline fade-up" style="margin-bottom: 80px;">
+            <div class="timeline-line"></div>
+            <div class="timeline-steps">
+                
+                <!-- Step 1 -->
+                <div class="timeline-step">
+                    <div class="step-icon-wrap">
+                        <iconify-icon icon="solar:stethoscope-linear"></iconify-icon>
+                    </div>
+                    <div class="step-number">1</div>
+                    <h4 class="step-title">Evaluación en terreno</h4>
+                    <p class="step-desc">Nuestros profesionales realizan el chequeo preventivo en la empresa mediante protocolos clínicos y registro digital.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="timeline-step">
+                    <div class="step-icon-wrap">
+                        <iconify-icon icon="solar:document-text-linear"></iconify-icon>
+                    </div>
+                    <div class="step-number">2</div>
+                    <h4 class="step-title">Resultados inmediatos</h4>
+                    <p class="step-desc">Cada colaborador conoce sus resultados y estos quedan disponibles en su cuenta personal de happ.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="timeline-step">
+                    <div class="step-icon-wrap">
+                        <iconify-icon icon="solar:user-speak-linear"></iconify-icon>
+                    </div>
+                    <div class="step-number">3</div>
+                    <h4 class="step-title">Orientación personalizada</h4>
+                    <p class="step-desc">Cada persona recibe recomendaciones a medida y una guía clara para comenzar a cuidar su salud.</p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="timeline-step">
+                    <div class="step-icon-wrap">
+                        <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
+                    </div>
+                    <div class="step-number">4</div>
+                    <h4 class="step-title">Activación de la siguiente acción</h4>
+                    <p class="step-desc">El sistema deriva cada caso de forma oportuna y brinda acceso inmediato a los beneficios disponibles.</p>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="timeline-step">
+                    <div class="step-icon-wrap">
+                        <iconify-icon icon="solar:graph-linear"></iconify-icon>
+                    </div>
+                    <div class="step-number">5</div>
+                    <h4 class="step-title">Información para la empresa</h4>
+                    <p class="step-desc">Los datos se consolidan en reportes ejecutivos anónimos para evaluar el perfil de salud de la organización.</p>
+                </div>
+
+                <!-- Step 6 -->
+                <div class="timeline-step">
+                    <div class="step-icon-wrap">
+                        <iconify-icon icon="solar:calendar-date-linear"></iconify-icon>
+                    </div>
+                    <div class="step-number">6</div>
+                    <h4 class="step-title">Seguimiento en el tiempo</h4>
+                    <p class="step-desc">El historial médico permanece accesible en la plataforma happ para comparar evaluaciones y medir avances.</p>
+                </div>
+
+            </div>
+            
+            <!-- Process Disclaimer Card -->
+            <div class="process-disclaimer glass-card fade-up">
+                <div class="disclaimer-icon-wrap">
+                    <iconify-icon icon="solar:info-circle-bold"></iconify-icon>
+                </div>
+                <p class="disclaimer-text">
+                    <strong>No realizamos un operativo y nos vamos.</strong> Acompañamos a las personas y entregamos a las organizaciones información que les permite gestionar la salud de sus equipos de manera continua.
+                </p>
+            </div>
+        </div>
+
+        <!-- Nuestras soluciones Header (Centered) -->
+        <div class="text-center fade-up" style="max-width: 800px; margin: 0 auto 56px;">
+            <h2 class="section-title">Nuestras <span>soluciones</span></h2>
+            <p class="section-sub" style="max-width: 100%;">Cada solución puede contratarse de forma independiente o combinarse para crear un programa preventivo integral.</p>
+        </div>
+
+        <div class="services-layout">
+
+            <!-- LEFT: Intro visual (photo) -->
+            <div class="services-intro fade-up">
+                <div class="services-intro-visual">
+                    <img src="doctor-blood-pressure.jpg" alt="Evaluación de salud preventiva en clínica">
+                </div>
+            </div>
+
+            <!-- RIGHT: Accordion -->
+            <div class="services-accordion fade-up fade-up-d1">
+
+                <!-- Servicio 1: Cardiovascular -->
+                <div class="acc-item" id="acc-1">
+                    <button class="acc-trigger" onclick="toggleAcc('acc-1')" aria-expanded="false">
+                        <div class="acc-icon-wrap">
+                            <iconify-icon icon="solar:heart-pulse-bold"></iconify-icon>
+                        </div>
+                        <div class="acc-trigger-text">
+                            <h3>Evaluación de Riesgo Cardiovascular</h3>
+                        </div>
+                        <iconify-icon icon="solar:alt-arrow-down-linear" class="acc-chevron"></iconify-icon>
+                    </button>
+                    <div class="acc-body">
+                        <div class="acc-body-inner">
+                            <p>Las enfermedades cardiovasculares continúan siendo una de las principales causas de enfermedad, ausentismo y costos en salud. Muchas veces evolucionan silenciosamente durante años antes de manifestarse.</p>
+                            <p>Nuestra Evaluación de Riesgo Cardiovascular permite identificar tempranamente factores de riesgo mediante una evaluación clínica realizada por profesionales de la salud, apoyada por tecnología propia que entrega resultados inmediatos, orientación personalizada y seguimiento digital.</p>
+                            
+                            <h4 style="font-size: 15px; font-weight: 800; color: var(--txt-main); margin: 24px 0 12px;">¿Qué evaluamos?</h4>
+                            <div class="acc-check-list" style="margin-bottom: 24px;">
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Presión arterial</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Glicemia capilar</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Peso y talla</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Índice de Masa Corporal (IMC)</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Circunferencia de cintura</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Encuesta de factores de riesgo</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Clasificación del riesgo cardiovascular</div>
+                            </div>
+
+                            <h4 style="font-size: 15px; font-weight: 800; color: var(--txt-main); margin: 24px 0 12px;">Lo que recibe cada colaborador:</h4>
+                            <div class="acc-check-list" style="margin-bottom: 24px;">
+                                <div class="acc-check-item">
+                                    <iconify-icon icon="solar:smartphone-bold" style="color: var(--c-blue);"></iconify-icon>
+                                    Resultados disponibles inmediatamente en la plataforma digital happ
+                                </div>
+                                <div class="acc-check-item">
+                                    <iconify-icon icon="solar:heart-pulse-bold" style="color: #FF2E93;"></iconify-icon>
+                                    Clasificación personalizada de su riesgo cardiovascular
+                                </div>
+                                <div class="acc-check-item">
+                                    <iconify-icon icon="solar:shield-user-bold" style="color: var(--c-blue);"></iconify-icon>
+                                    Orientación clínica según sus resultados
+                                </div>
+                                <div class="acc-check-item">
+                                    <iconify-icon icon="solar:document-text-bold" style="color: var(--c-blue);"></iconify-icon>
+                                    Derivación u orden médica cuando corresponde
+                                </div>
+                                <div class="acc-check-item">
+                                    <iconify-icon icon="solar:chart-bold" style="color: var(--c-blue);"></iconify-icon>
+                                    Historial digital para realizar seguimiento en el tiempo
+                                </div>
+                            </div>
+
+                            <h4 style="font-size: 15px; font-weight: 800; color: var(--txt-main); margin: 24px 0 12px;">La experiencia digital happ</h4>
+                            <p style="margin-bottom: 16px;">Cada evaluación queda registrada en la plataforma happ, donde el colaborador puede consultar sus resultados en cualquier momento y seguir la evolución de su salud.</p>
+                            <p>La empresa recibe reportes consolidados y anonimizados que permiten conocer el perfil de riesgo de sus equipos y orientar acciones preventivas basadas en datos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Servicio 2: Nutricional -->
+                <div class="acc-item" id="acc-2">
+                    <button class="acc-trigger" onclick="toggleAcc('acc-2')" aria-expanded="false">
+                        <div class="acc-icon-wrap">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path opacity="0.5" d="M3 10C3 6.22876 3 4.34315 4.17157 3.17157C5.34315 2 7.22876 2 11 2H13C16.7712 2 18.6569 2 19.8284 3.17157C21 4.34315 21 6.22876 21 10V14C21 17.7712 21 19.6569 19.8284 20.8284C18.6569 22 16.7712 22 13 22H11C7.22876 22 5.34315 22 4.17157 20.8284C3 19.6569 3 17.7712 3 14V10Z" fill="currentColor"></path><path d="M7.25 18C7.25 17.5858 7.58579 17.25 8 17.25H16C16.4142 17.25 16.75 17.5858 16.75 18C16.75 18.4142 16.4142 18.75 16 18.75H8C7.58579 18.75 7.25 18.4142 7.25 18Z" fill="currentColor"></path><path d="M8.64474 6.30984C10.8663 5.89672 13.1338 5.89672 15.3553 6.30984L15.8311 6.39831C16.7114 6.562 17.2307 7.59158 16.8992 8.51607L16.1548 10.5925C16.047 10.8934 15.7564 11.0592 15.4746 10.9806C13.9267 10.5488 12.3304 10.41 10.7514 10.5641L9.99892 8.22236C9.84259 7.73584 9.36237 7.48283 8.92632 7.65725C8.49027 7.83168 8.26351 8.36748 8.41984 8.854L9.05918 10.8437C8.88073 10.8855 8.70281 10.9311 8.52553 10.9806C8.2437 11.0592 7.95314 10.8934 7.84525 10.5925L7.10085 8.51607C6.76942 7.59158 7.2887 6.562 8.16897 6.39831L8.64474 6.30984Z" fill="currentColor"></path></svg>
+                        </div>
+                        <div class="acc-trigger-text">
+                            <h3>Evaluación Nutricional</h3>
+                        </div>
+                        <iconify-icon icon="solar:alt-arrow-down-linear" class="acc-chevron"></iconify-icon>
+                    </button>
+                    <div class="acc-body">
+                        <div class="acc-body-inner">
+                            <p><strong>Alimentación saludable basada en información real.</strong></p>
+                            <p>Una buena alimentación comienza con un diagnóstico adecuado. Nuestra Evaluación Nutricional permite conocer el estado nutricional de cada colaborador, detectar oportunamente riesgos cardiometabólicos y entregar recomendaciones personalizadas para mejorar sus hábitos y calidad de vida.</p>
+                            
+                            <h4 style="font-size: 15px; font-weight: 800; color: var(--txt-main); margin: 24px 0 12px;">¿Qué evaluamos?</h4>
+                            <div class="acc-check-list" style="margin-bottom: 24px;">
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Presión arterial</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Glicemia capilar</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Peso y talla</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Circunferencia de cintura</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Encuesta de salud</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Tasa metabólica basal</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Perfil de riesgo nutricional</div>
+                            </div>
+
+                            <h4 style="font-size: 15px; font-weight: 800; color: var(--txt-main); margin: 24px 0 12px;">Lo que recibe cada colaborador:</h4>
+                            <div class="acc-check-list" style="margin-bottom: 24px;">
+                                <div class="acc-check-item">
+                                    <iconify-icon icon="solar:smartphone-bold" style="color: var(--c-blue);"></iconify-icon>
+                                    Resultados disponibles en la plataforma digital happ
+                                </div>
+                                <div class="acc-check-item">
+                                    <iconify-icon icon="solar:leaf-bold" style="color: #00C28E;"></iconify-icon>
+                                    Orientación nutricional personalizada
+                                </div>
+                                <div class="acc-check-item">
+                                    <iconify-icon icon="solar:fire-bold" style="color: #FF5E3A;"></iconify-icon>
+                                    Requerimiento calórico diario
+                                </div>
+                                <div class="acc-check-item">
+                                    <iconify-icon icon="solar:clipboard-list-bold" style="color: var(--c-blue);"></iconify-icon>
+                                    Recomendaciones prácticas para mejorar sus hábitos alimentarios
+                                </div>
+                                <div class="acc-check-item">
+                                    <iconify-icon icon="solar:chart-bold" style="color: var(--c-blue);"></iconify-icon>
+                                    Historial digital para seguimiento de su evolución
+                                </div>
+                            </div>
+
+                            <h4 style="font-size: 15px; font-weight: 800; color: var(--txt-main); margin: 24px 0 12px;">La experiencia digital happ</h4>
+                            <p style="margin-bottom: 16px;">Toda la información queda disponible en la plataforma happ, permitiendo al colaborador consultar sus resultados y mantener un registro de su evolución nutricional.</p>
+                            <p>La empresa obtiene indicadores agregados para diseñar programas de alimentación saludable basados en evidencia.</p>
+
+                            <h4 style="font-size: 15px; font-weight: 800; color: var(--txt-main); margin: 24px 0 12px;">Beneficios para la organización</h4>
+                            <div class="acc-check-list" style="margin-bottom: 24px;">
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Promueve hábitos saludables.</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Previene enfermedades metabólicas.</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Favorece el bienestar y la productividad.</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Entrega información para programas preventivos.</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Genera una experiencia diferenciadora para los colaboradores.</div>
+                            </div>
+
+                            <div class="acc-impl-row">
+                                <div class="acc-impl-badge"><iconify-icon icon="solar:clock-circle-bold"></iconify-icon> 12 minutos por persona</div>
+                                <div class="acc-impl-badge"><iconify-icon icon="solar:users-group-rounded-bold"></iconify-icon> Mínimo 35 personas</div>
+                                <div class="acc-impl-badge"><iconify-icon icon="solar:stethoscope-bold"></iconify-icon> Nutricionista</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Servicio 3: Musculoesquelética -->
+                <div class="acc-item" id="acc-3">
+                    <button class="acc-trigger" onclick="toggleAcc('acc-3')" aria-expanded="false">
+                        <div class="acc-icon-wrap">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path opacity="0.5" d="M2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12Z" fill="currentColor"></path><path d="M9.4809 10.6101C10.8721 10.6101 11.9999 9.48227 11.9999 8.09107C11.9999 9.48227 13.1277 10.6101 14.5189 10.6101C15.9101 10.6101 17.0379 9.48227 17.0379 8.09107C17.0379 7.04 16.3941 5.85171 15.4794 5.3335C14.9952 5.05921 14.5189 4.61717 14.5189 4.06069V2.01123L9.4809 2.01123V4.06069C9.4809 4.61717 9.00457 5.05921 8.52039 5.3335C7.60566 5.85171 6.96191 7.04 6.96191 8.09107C6.96191 9.48227 8.0897 10.6101 9.4809 10.6101Z" fill="currentColor"></path><path d="M14.557 21.9884L14.557 19.9849C14.557 19.4284 15.0333 18.9864 15.5175 18.7121C16.4322 18.1939 17.076 17.0056 17.076 15.9545C17.076 14.5633 15.9482 13.4355 14.557 13.4355C13.1658 13.4355 12.038 14.5633 12.038 15.9545C12.038 14.5633 10.9102 13.4355 9.51899 13.4355C8.12779 13.4355 7 14.5633 7 15.9545C7 17.0056 7.64375 18.1939 8.55848 18.7121C9.04266 18.9864 9.51899 19.4284 9.51899 19.9849V21.9895L14.557 21.9884Z" fill="currentColor"></path></svg>
+                        </div>
+                        <div class="acc-trigger-text">
+                            <h3>Evaluación Musculoesquelética</h3>
+                        </div>
+                        <iconify-icon icon="solar:alt-arrow-down-linear" class="acc-chevron"></iconify-icon>
+                    </button>
+                    <div class="acc-body">
+                        <div class="acc-body-inner">
+                            <p><strong>Prevenir molestias hoy para cuidar el bienestar de mañana.</strong></p>
+                            <p>Las molestias musculoesqueléticas son una de las principales causas de dolor, licencias médicas y disminución de la productividad.</p>
+                            <p>Nuestra evaluación permite detectar tempranamente alteraciones posturales, restricciones de movilidad y factores de riesgo asociados al trabajo, entregando recomendaciones preventivas personalizadas.</p>
+                            
+                            <h4 style="font-size: 15px; font-weight: 800; color: var(--txt-main); margin: 24px 0 12px;">¿Qué evaluamos?</h4>
+                            <div class="acc-check-list" style="margin-bottom: 24px;">
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Postura</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Movilidad</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Cuello</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Hombros</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Columna</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Muñecas</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Prueba funcional</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Cuestionario de molestias</div>
+                            </div>
+
+                            <h4 style="font-size: 15px; font-weight: 800; color: var(--txt-main); margin: 24px 0 12px;">Lo que recibe cada colaborador</h4>
+                            <div class="acc-check-list" style="margin-bottom: 24px;">
+                                <div class="acc-check-item">
+                                    <iconify-icon icon="solar:smartphone-bold" style="color: var(--c-blue);"></iconify-icon>
+                                    Resultados disponibles en la plataforma digital happ
+                                </div>
+                                <div class="acc-check-item">
+                                    <iconify-icon icon="solar:shield-user-bold" style="color: var(--c-blue);"></iconify-icon>
+                                    Evaluación personalizada
+                                </div>
+                                <div class="acc-check-item">
+                                    <iconify-icon icon="solar:lightbulb-bold" style="color: #FFB800;"></iconify-icon>
+                                    Recomendaciones ergonómicas
+                                </div>
+                                <div class="acc-check-item">
+                                    <iconify-icon icon="solar:document-text-bold" style="color: var(--c-blue);"></iconify-icon>
+                                    Derivación cuando corresponde
+                                </div>
+                                <div class="acc-check-item">
+                                    <iconify-icon icon="solar:chart-bold" style="color: var(--c-blue);"></iconify-icon>
+                                    Historial digital de sus evaluaciones
+                                </div>
+                            </div>
+
+                            <h4 style="font-size: 15px; font-weight: 800; color: var(--txt-main); margin: 24px 0 12px;">La experiencia digital happ</h4>
+                            <p>Los resultados permanecen disponibles para consulta y seguimiento, permitiendo medir la evolución de cada colaborador y generar información útil para la empresa.</p>
+
+                            <h4 style="font-size: 15px; font-weight: 800; color: var(--txt-main); margin: 24px 0 12px;">Beneficios para la organización</h4>
+                            <div class="acc-check-list" style="margin-bottom: 24px;">
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Previene lesiones laborales.</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Reduce molestias musculoesqueléticas.</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Promueve hábitos ergonómicos.</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Favorece la productividad.</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Genera información preventiva para la organización.</div>
+                            </div>
+
+                            <div class="acc-impl-row">
+                                <div class="acc-impl-badge"><iconify-icon icon="solar:clock-circle-bold"></iconify-icon> 12 minutos por persona</div>
+                                <div class="acc-impl-badge"><iconify-icon icon="solar:users-group-rounded-bold"></iconify-icon> Mínimo 35 personas</div>
+                                <div class="acc-impl-badge"><iconify-icon icon="solar:stethoscope-bold"></iconify-icon> Kinesiólogo(a)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Servicio 4: Auditivo -->
+                <div class="acc-item" id="acc-4">
+                    <button class="acc-trigger" onclick="toggleAcc('acc-4')" aria-expanded="false">
+                        <div class="acc-icon-wrap">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 3.25C12.4142 3.25 12.75 3.58579 12.75 4L12.75 20C12.75 20.4142 12.4142 20.75 12 20.75C11.5858 20.75 11.25 20.4142 11.25 20L11.25 4C11.25 3.58579 11.5858 3.25 12 3.25ZM4 10.25C4.41421 10.25 4.75 10.5858 4.75 11L4.75 13C4.75 13.4142 4.41421 13.75 4 13.75C3.58579 13.75 3.25 13.4142 3.25 13L3.25 11C3.25 10.5858 3.58579 10.25 4 10.25ZM20 10.25C20.4142 10.25 20.75 10.5858 20.75 11V13C20.75 13.4142 20.4142 13.75 20 13.75C19.5858 13.75 19.25 13.4142 19.25 13V11C19.25 10.5858 19.5858 10.25 20 10.25Z" fill="currentColor"></path><g opacity="0.5"><path d="M16.75 7C16.75 6.58579 16.4142 6.25 16 6.25C15.5858 6.25 15.25 6.58579 15.25 7V17C15.25 17.4142 15.5858 17.75 16 17.75C16.4142 17.75 16.75 17.4142 16.75 17V7Z" fill="currentColor"></path><path d="M8.75 7C8.75 6.58579 8.41421 6.25 8 6.25C7.58579 6.25 7.25 6.58579 7.25 7V17C7.25 17.4142 7.58579 17.75 8 17.75C8.41421 17.75 8.75 17.4142 8.75 17V7Z" fill="currentColor"></path></g></svg>
+                        </div>
+                        <div class="acc-trigger-text">
+                            <h3>Screening Auditivo</h3>
+                        </div>
+                        <iconify-icon icon="solar:alt-arrow-down-linear" class="acc-chevron"></iconify-icon>
+                    </button>
+                    <div class="acc-body">
+                        <div class="acc-body-inner">
+                            <p><strong>Escuchar bien también es cuidar la salud.</strong></p>
+                            <p>Muchas alteraciones auditivas comienzan de manera silenciosa. Nuestro Screening Auditivo permite detectar señales de alerta de forma temprana y educar a los colaboradores sobre el cuidado de su salud auditiva.</p>
+                            
+                            <h4 style="font-size: 15px; font-weight: 800; color: var(--txt-main); margin: 24px 0 12px;">¿Qué evaluamos?</h4>
+                            <div class="acc-check-list" style="margin-bottom: 24px;">
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Encuesta auditiva</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Otoscopía</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Audiometría de screening</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Interpretación inmediata</div>
+                            </div>
+
+                            <h4 style="font-size: 15px; font-weight: 800; color: var(--txt-main); margin: 24px 0 12px;">Lo que recibe cada colaborador:</h4>
+                            <div class="acc-check-list" style="margin-bottom: 24px;">
+                                <div class="acc-check-item">
+                                    <iconify-icon icon="solar:smartphone-bold" style="color: var(--c-blue);"></iconify-icon>
+                                    Resultados disponibles en la plataforma digital happ
+                                </div>
+                                <div class="acc-check-item">
+                                    <iconify-icon icon="solar:bell-bing-bold" style="color: var(--c-blue);"></iconify-icon>
+                                    Educación preventiva
+                                </div>
+                                <div class="acc-check-item">
+                                    <iconify-icon icon="solar:chat-bubble-text-bold" style="color: var(--c-blue);"></iconify-icon>
+                                    Recomendaciones personalizadas
+                                </div>
+                                <div class="acc-check-item">
+                                    <iconify-icon icon="solar:shield-user-bold" style="color: var(--c-blue);"></iconify-icon>
+                                    Derivación cuando corresponde
+                                </div>
+                                <div class="acc-check-item">
+                                    <iconify-icon icon="solar:chart-bold" style="color: var(--c-blue);"></iconify-icon>
+                                    Historial digital de sus evaluaciones
+                                </div>
+                            </div>
+
+                            <h4 style="font-size: 15px; font-weight: 800; color: var(--txt-main); margin: 24px 0 12px;">La experiencia digital happ</h4>
+                            <p>Toda la evaluación queda registrada digitalmente, permitiendo el acceso permanente a los resultados y facilitando el seguimiento preventivo.</p>
+
+                            <h4 style="font-size: 15px; font-weight: 800; color: var(--txt-main); margin: 24px 0 12px;">Beneficios para la organización</h4>
+                            <div class="acc-check-list" style="margin-bottom: 24px;">
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Detecta alteraciones auditivas oportunamente.</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Promueve hábitos de protección auditiva.</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Refuerza la prevención en trabajadores expuestos a ruido.</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Mejora la educación en salud.</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Entrega información para programas preventivos.</div>
+                            </div>
+
+                            <div class="acc-impl-row">
+                                <div class="acc-impl-badge"><iconify-icon icon="solar:clock-circle-bold"></iconify-icon> 12 minutos por persona</div>
+                                <div class="acc-impl-badge"><iconify-icon icon="solar:users-group-rounded-bold"></iconify-icon> Mínimo 35 personas</div>
+                                <div class="acc-impl-badge"><iconify-icon icon="solar:stethoscope-bold"></iconify-icon> Fonoaudiólogo(a)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Servicio 5: Recuperación y Bienestar -->
+                <div class="acc-item" id="acc-5">
+                    <button class="acc-trigger" onclick="toggleAcc('acc-5')" aria-expanded="false">
+                        <div class="acc-icon-wrap">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path d="M14.5 4.5C14.5 5.88071 13.3807 7 12 7C10.6193 7 9.5 5.88071 9.5 4.5C9.5 3.11929 10.6193 2 12 2C13.3807 2 14.5 3.11929 14.5 4.5Z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M8.9 15.55C9.14853 15.2186 9.61863 15.1515 9.95 15.4C10.2814 15.6485 10.3485 16.1186 10.1 16.45L9.17549 17.6827C9.16815 17.6925 9.1609 17.7021 9.15373 17.7117C9.02731 17.8804 8.92789 18.013 8.81333 18.1328C8.5315 18.4274 8.18768 18.6557 7.80675 18.8011C7.65192 18.8602 7.49109 18.9004 7.28659 18.9514C7.27499 18.9543 7.26326 18.9573 7.25138 18.9602L5.45797 19.4086C5.04189 19.5126 4.75 19.8865 4.75 20.3153C4.75 20.8315 5.16846 21.25 5.68466 21.25H6.36842C7.91433 21.25 9.41854 20.7486 10.6553 19.8211L12.55 18.4C12.8814 18.1515 13.3515 18.2186 13.6 18.55C13.8485 18.8814 13.7814 19.3515 13.45 19.6L12.5453 20.2785L13.0371 20.4629C13.571 20.6631 13.8118 20.7531 14.0537 20.8288C14.7819 21.0564 15.5355 21.193 16.2973 21.2356C16.5503 21.2497 16.8074 21.25 17.3776 21.25H18.3153C18.8315 21.25 19.25 20.8315 19.25 20.3153C19.25 19.8865 18.9581 19.5126 18.542 19.4086L17.0684 19.0402C17.0408 19.0333 17.0136 19.0265 16.9866 19.0198C16.511 18.9012 16.1357 18.8077 15.8003 18.6143C15.7 18.5565 15.6035 18.4924 15.5114 18.4224C15.203 18.1884 14.9711 17.8788 14.6773 17.4864C14.6606 17.4642 14.6438 17.4417 14.6267 17.4189L13.9 16.45C13.6515 16.1186 13.7186 15.6485 14.05 15.4C14.3814 15.1515 14.8515 15.2186 15.1 15.55L15.8267 16.5189C16.1952 17.0103 16.2982 17.1365 16.4182 17.2276C16.4601 17.2594 16.504 17.2885 16.5496 17.3148C16.6801 17.3901 16.8364 17.436 17.4322 17.585L18.9058 17.9534C19.9897 18.2243 20.75 19.1982 20.75 20.3153C20.75 21.66 19.66 22.75 18.3153 22.75H17.3524C16.8139 22.75 16.5133 22.75 16.2136 22.7333C15.3283 22.6838 14.4525 22.525 13.6062 22.2605C13.3197 22.1709 13.0382 22.0653 12.534 21.8762L11.1016 21.3391C9.69806 22.2575 8.05372 22.75 6.36842 22.75H5.68466C4.34003 22.75 3.25 21.66 3.25 20.3153C3.25 19.1982 4.01034 18.2243 5.09417 17.9534L6.88758 17.505C7.14327 17.4411 7.21157 17.4227 7.27182 17.3997C7.44497 17.3337 7.60125 17.2299 7.72936 17.096C7.77394 17.0493 7.81736 16.9935 7.97549 16.7827L8.9 15.55Z" fill="currentColor"></path><g opacity="0.5"><path d="M12.0002 9.77051C11.644 9.77052 11.3211 9.79101 11.1392 9.82185L10.2476 9.97199C8.23506 10.3109 6.7502 12.0735 6.7502 14.1501C6.7502 15.2309 6.2157 16.2434 5.32068 16.8463L5.21944 16.9145C4.96467 17.0861 4.6882 17.2228 4.3973 17.3207L3.2396 17.7107C2.84706 17.8429 2.42165 17.6319 2.28944 17.2393C2.15722 16.8468 2.36826 16.4214 2.76081 16.2891L3.9185 15.8992C4.08198 15.8441 4.23766 15.7672 4.3814 15.6704L4.48263 15.6022C4.96024 15.2805 5.2502 14.7363 5.2502 14.1501C5.2502 11.3525 7.25281 8.95522 9.99849 8.49282L10.8885 8.34294C11.1929 8.29139 11.6133 8.27053 12.0002 8.27051C12.3869 8.27049 12.8071 8.29123 13.1116 8.34289L14.0019 8.49282C16.7476 8.95522 18.7502 11.3525 18.7502 14.1501C18.7502 14.7363 19.0402 15.2805 19.5178 15.6022L19.619 15.6704C19.7627 15.7672 19.9184 15.8441 20.0819 15.8992L21.2396 16.2891C21.6321 16.4214 21.8432 16.8468 21.711 17.2393C21.5788 17.6319 21.1534 17.8429 20.7608 17.7107L19.6031 17.3207C19.3122 17.2228 19.0357 17.0861 18.781 16.9145L18.6797 16.8463C17.7847 16.2434 17.2502 15.2309 17.2502 14.1501C17.2502 12.0735 15.7653 10.3109 13.7528 9.97199L12.861 9.82181C12.6793 9.79095 12.3565 9.77049 12.0002 9.77051Z" fill="currentColor"></path></g></svg>
+                        </div>
+                        <div class="acc-trigger-text">
+                            <h3>Recuperación y Bienestar Laboral</h3>
+                        </div>
+                        <iconify-icon icon="solar:alt-arrow-down-linear" class="acc-chevron"></iconify-icon>
+                    </button>
+                    <div class="acc-body">
+                        <div class="acc-body-inner">
+                            <p><strong>Una pausa que recupera cuerpo y mente.</strong></p>
+                            <p>Una breve pausa puede transformar la jornada laboral. Esta experiencia combina técnicas manuales especializadas para disminuir la tensión muscular, aliviar el estrés y favorecer el bienestar físico y mental de los colaboradores.</p>
+                            
+                            <h4 style="font-size: 15px; font-weight: 800; color: var(--txt-main); margin: 24px 0 12px;">¿Qué realizamos?</h4>
+                            <div class="acc-check-list" style="margin-bottom: 24px;">
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Identificación de zonas de tensión</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Masaje en silla ergonómica</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Técnicas focalizadas en cuello, hombros, espalda y brazos</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Evaluación breve previa</div>
+                            </div>
+
+                            <h4 style="font-size: 15px; font-weight: 800; color: var(--txt-main); margin: 24px 0 12px;">Lo que recibe cada colaborador:</h4>
+                            <div class="acc-check-list" style="margin-bottom: 24px;">
+                                <div class="acc-check-item">
+                                    <iconify-icon icon="solar:user-bold" style="color: var(--c-blue);"></iconify-icon>
+                                    Sesión personalizada
+                                </div>
+                                <div class="acc-check-item">
+                                    <iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon>
+                                    Disminución de la tensión muscular
+                                </div>
+                                <div class="acc-check-item">
+                                    <iconify-icon icon="solar:bolt-bold" style="color: #FFC600;"></iconify-icon>
+                                    Recuperación física
+                                </div>
+                                <div class="acc-check-item">
+                                    <iconify-icon icon="solar:emoji-funny-circle-bold" style="color: var(--c-blue);"></iconify-icon>
+                                    Mayor bienestar y desconexión
+                                </div>
+                            </div>
+
+                            <h4 style="font-size: 15px; font-weight: 800; color: var(--txt-main); margin: 24px 0 12px;">La experiencia happ</h4>
+                            <p>Más que un masaje, entregamos una experiencia de bienestar altamente valorada por los colaboradores, diseñada para fortalecer el compromiso, mejorar la experiencia laboral y aportar al cuidado integral de las personas.</p>
+
+                            <h4 style="font-size: 15px; font-weight: 800; color: var(--txt-main); margin: 24px 0 12px;">Beneficios para la organización</h4>
+                            <div class="acc-check-list" style="margin-bottom: 24px;">
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Disminuye el estrés laboral.</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Favorece la recuperación física.</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Mejora el clima laboral.</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Incrementa la satisfacción de los colaboradores.</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Refuerza la cultura de bienestar.</div>
+                            </div>
+
+                            <div class="acc-impl-row">
+                                <div class="acc-impl-badge"><iconify-icon icon="solar:clock-circle-bold"></iconify-icon> 12 minutos por persona</div>
+                                <div class="acc-impl-badge"><iconify-icon icon="solar:users-group-rounded-bold"></iconify-icon> Mínimo 35 personas</div>
+                                <div class="acc-impl-badge"><iconify-icon icon="solar:stethoscope-bold"></iconify-icon> Kinesiólogo(a) o Masoterapeuta</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Servicio 6: Piel -->
+                <div class="acc-item" id="acc-6">
+                    <button class="acc-trigger" onclick="toggleAcc('acc-6')" aria-expanded="false">
+                        <div class="acc-icon-wrap">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path opacity="0.5" d="M3 10C3 6.22876 3 4.34315 4.17157 3.17157C5.34315 2 7.22876 2 11 2H13C16.7712 2 18.6569 2 19.8284 3.17157C21 4.34315 21 6.22876 21 10V14C21 17.7712 21 19.6569 19.8284 20.8284C18.6569 22 16.7712 22 13 22H11C7.22876 22 5.34315 22 4.17157 20.8284C3 19.6569 3 17.7712 3 14V10Z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M12 5.25C12.4142 5.25 12.75 5.58579 12.75 6V7.25H14C14.4142 7.25 14.75 7.58579 14.75 8C14.75 8.41421 14.4142 8.75 14 8.75L12.75 8.75L12.75 10C12.75 10.4142 12.4142 10.75 12 10.75C11.5858 10.75 11.25 10.4142 11.25 10L11.25 8.75H9.99997C9.58575 8.75 9.24997 8.41421 9.24997 8C9.24997 7.58579 9.58575 7.25 9.99997 7.25H11.25L11.25 6C11.25 5.58579 11.5858 5.25 12 5.25ZM7.25 14C7.25 13.5858 7.58579 13.25 8 13.25H16C16.4142 13.25 16.75 13.5858 16.75 14C16.75 14.4142 16.4142 14.75 16 14.75H8C7.58579 14.75 7.25 14.4142 7.25 14ZM8.25 18C8.25 17.5858 8.58579 17.25 9 17.25H15C15.4142 17.25 15.75 17.5858 15.75 18C15.75 18.4142 15.4142 18.75 15 18.75H9C8.58579 18.75 8.25 18.4142 8.25 18Z" fill="currentColor"></path></svg>
+                        </div>
+                        <div class="acc-trigger-text">
+                            <h3>Evaluación preventiva Cuidado de la piel</h3>
+                        </div>
+                        <iconify-icon icon="solar:alt-arrow-down-linear" class="acc-chevron"></iconify-icon>
+                    </button>
+                    <div class="acc-body">
+                        <div class="acc-body-inner">
+                            <p><strong>Prevenir molestias hoy para cuidar el bienestar de mañana.</strong></p>
+                            <p>Las molestias musculoesqueléticas son una de las principales causas de dolor, licencias médicas y disminución de la productividad.</p>
+                            <p>Nuestra evaluación permite detectar tempranamente alteraciones posturales, restricciones de movilidad y factores de riesgo asociados al trabajo, entregando recomendaciones preventivas personalizadas.</p>
+                            
+                            <h4 style="font-size: 15px; font-weight: 800; color: var(--txt-main); margin: 24px 0 12px;">¿Qué evaluamos?</h4>
+                            <div class="acc-check-list" style="margin-bottom: 24px;">
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Postura</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Movilidad</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Cuello</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Hombros</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Columna</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Muñecas</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Prueba funcional</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Cuestionario de molestias</div>
+                            </div>
+
+                            <h4 style="font-size: 15px; font-weight: 800; color: var(--txt-main); margin: 24px 0 12px;">Lo que recibe cada colaborador</h4>
+                            <div class="acc-check-list" style="margin-bottom: 24px;">
+                                <div class="acc-check-item">
+                                    <iconify-icon icon="solar:smartphone-bold" style="color: var(--c-blue);"></iconify-icon>
+                                    Resultados disponibles en la plataforma digital happ
+                                </div>
+                                <div class="acc-check-item">
+                                    <iconify-icon icon="solar:shield-user-bold" style="color: var(--c-blue);"></iconify-icon>
+                                    Evaluación personalizada
+                                </div>
+                                <div class="acc-check-item">
+                                    <iconify-icon icon="solar:lightbulb-bold" style="color: #FFB800;"></iconify-icon>
+                                    Recomendaciones ergonómicas
+                                </div>
+                                <div class="acc-check-item">
+                                    <iconify-icon icon="solar:document-text-bold" style="color: var(--c-blue);"></iconify-icon>
+                                    Derivación cuando corresponde
+                                </div>
+                                <div class="acc-check-item">
+                                    <iconify-icon icon="solar:chart-bold" style="color: var(--c-blue);"></iconify-icon>
+                                    Historial digital de sus evaluaciones
+                                </div>
+                            </div>
+
+                            <h4 style="font-size: 15px; font-weight: 800; color: var(--txt-main); margin: 24px 0 12px;">La experiencia digital happ</h4>
+                            <p>Los resultados permanecen disponibles para consulta y seguimiento, permitiendo medir la evolución de cada colaborador y generar información útil para la empresa.</p>
+
+                            <h4 style="font-size: 15px; font-weight: 800; color: var(--txt-main); margin: 24px 0 12px;">Beneficios para la organización</h4>
+                            <div class="acc-check-list" style="margin-bottom: 24px;">
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Previene lesiones laborales.</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Reduce molestias musculoesqueléticas.</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Promueve hábitos ergonómicos.</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Favorece la productividad.</div>
+                                <div class="acc-check-item"><iconify-icon icon="solar:check-circle-bold" style="color: var(--c-cyan);"></iconify-icon> Genera información preventiva para la organización.</div>
+                            </div>
+
+                            <div class="acc-impl-row">
+                                <div class="acc-impl-badge"><iconify-icon icon="solar:clock-circle-bold"></iconify-icon> 12 minutos por persona</div>
+                                <div class="acc-impl-badge"><iconify-icon icon="solar:users-group-rounded-bold"></iconify-icon> Mínimo 35 personas</div>
+                                <div class="acc-impl-badge"><iconify-icon icon="solar:stethoscope-bold"></iconify-icon> Kinesiólogo(a)</div>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <!-- Bottom Wave Divider -->
+    <div class="section-divider">
+        <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path d="M0,32L120,42.7C240,53,480,75,720,74.7C960,75,1200,53,1320,42.7L1440,32L1440,120L1320,120C1200,120,960,120,720,120C480,120,240,120,120,120L0,120Z" fill="#ffffff"></path>
+        </svg>
+    </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════════
+     BANNER CTA PREVENCIÓN
+════════════════════════════════════════════════════════════ -->
+<section class="cta-banner-section section">
+    <div class="container">
+        <div class="cta-banner-card fade-up">
+            <!-- Background floating plus icons -->
+            <div class="cta-plus-icon icon-1">+</div>
+            <div class="cta-plus-icon icon-2">+</div>
+            <div class="cta-plus-icon icon-3">+</div>
+            
+            <div class="cta-banner-content">
+                <h2 class="cta-banner-title">La salud de tu equipo empieza en terreno</h2>
+                <p class="cta-banner-text">Llevá salud en terreno a tu empresa con evaluaciones clínicas y tecnología propia. Transformá un operativo en datos útiles para cuidar a tus equipos.</p>
+                <a href="#contacto" class="cta-banner-btn">
+                    Agendar Demo
+                </a>
+            </div>
+            <div class="cta-banner-mockup">
+                <img src="Rectangle.png" alt="Happ Phone Mockup" loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════════
+     HAPPIA SECTION
+════════════════════════════════════════════════════════════ -->
+<section class="happia-section section" id="happia">
+    <div class="container">
+        <!-- Intro Hero Grid -->
+        <div class="happia-intro-grid fade-up">
+            <div class="happia-intro-text">
+                <span class="section-label">HAPPIA</span>
+                <h2 class="section-title">Tu asistente de salud <br><span>24/7</span></h2>
+                <p class="section-sub-happia" style="font-weight: 700; margin-bottom: 20px; font-size: 20px; color: var(--c-blue);">¿Mucha información, poca claridad.?</p>
+                <p style="color: var(--txt-sub); font-size: 16px; line-height: 1.8; margin-bottom: 16px;">
+                    No solo realizamos evaluaciones preventivas. Nuestra plataforma digital acompaña todo el proceso antes, durante y después del operativo, entregando una Hoy administrar la salud significa revisar recetas, exámenes, órdenes médicas, seguros y múltiples prestadores.
+                </p>
+                <p style="color: var(--txt-sub); font-size: 16px; line-height: 1.8;">
+                    <strong>happIA</strong>, tu asistente de salud digital 24/7 reúne toda esa información, la interpreta y la transforma en recomendaciones simples para cada persona.
+                </p>
+            </div>
+            <div class="happia-intro-visual">
+                <div class="happia-visual-glow"></div>
+                <div class="happia-robot-card glass-card">
+                    <img src="robot.png" alt="happIA Robot" class="happia-robot-img">
+                </div>
+            </div>
+        </div>
+
+        <!-- Ecosystem Section -->
+        <div class="happia-ecosystem-header text-center fade-up" style="max-width: 800px; margin: 80px auto 48px;">
+            <span class="section-label">EN UN SOLO LUGAR</span>
+            <h2 class="section-title">Todo tu <span>ecosistema de salud</span></h2>
+            <p class="section-sub" style="font-weight: 700; margin-bottom: 24px; max-width: 100%;">happIA conecta tu información para ayudarte a decidir mejor.</p>
+            <p style="color: var(--txt-sub); font-size: 16px; line-height: 1.8;">
+                En happ creemos que un chequeo preventivo solo genera valor cuando se convierte en acciones concretas para las personas y en información útil para las organizaciones. Por eso combinamos atención presencial, tecnología y seguimiento digital para acompañar todo el proceso de prevención.
+            </p>
+        </div>
+
+        <!-- Ecosystem 6-card grid -->
+        <div class="happia-ecosystem-grid fade-up">
+            <!-- Card 1 -->
+            <div class="happia-eco-card glass-card">
+                <div class="eco-card-icon-wrap icon-blue">
+                    <iconify-icon icon="solar:shield-user-bold-duotone"></iconify-icon>
+                </div>
+                <h3>Mi Salud</h3>
+                <p>Centraliza tu historial, indicadores, exámenes y recetas en un solo lugar.</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="happia-eco-card glass-card">
+                <div class="eco-card-icon-wrap icon-teal">
+                    <iconify-icon icon="solar:document-text-bold-duotone"></iconify-icon>
+                </div>
+                <h3>Documentos Inteligentes</h3>
+                <p>Reconoce y organiza automáticamente recetas, órdenes médicas y exámenes.</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="happia-eco-card glass-card">
+                <div class="eco-card-icon-wrap icon-indigo">
+                    <iconify-icon icon="solar:stethoscope-bold-duotone"></iconify-icon>
+                </div>
+                <h3>Interpretación Clínica</h3>
+                <p>Interpreta tus exámenes con lenguaje simple e identifica indicadores relevantes.</p>
+            </div>
+            <!-- Card 4 -->
+            <div class="happia-eco-card glass-card">
+                <div class="eco-card-icon-wrap icon-green">
+                    <iconify-icon icon="solar:tag-price-bold-duotone"></iconify-icon>
+                </div>
+                <h3>Compra Inteligente</h3>
+                <p>Compara medicamentos de marca y bioequivalentes para encontrar la mejor alternativa.</p>
+            </div>
+            <!-- Card 5 -->
+            <div class="happia-eco-card glass-card">
+                <div class="eco-card-icon-wrap icon-orange">
+                    <iconify-icon icon="solar:verified-check-bold-duotone"></iconify-icon>
+                </div>
+                <h3>Beneficios Inteligentes</h3>
+                <p>Identifica coberturas, convenios y prestadores para que aproveches mejor tus beneficios.</p>
+            </div>
+            <!-- Card 6 -->
+            <div class="happia-eco-card glass-card">
+                <div class="eco-card-icon-wrap icon-purple">
+                    <iconify-icon icon="solar:chat-round-dots-bold-duotone"></iconify-icon>
+                </div>
+                <h3>Asistente IA</h3>
+                <p>Responde tus dudas sobre exámenes, tratamientos, coberturas y costos al instante.</p>
+            </div>
+        </div>
+
+        <!-- How it works (7 steps) -->
+        <div class="happia-steps-section fade-up" style="margin-top: 100px;">
+            <div class="text-center" style="margin-bottom: 56px;">
+                <h2 class="section-title">Así funciona <span>happIA</span></h2>
+            </div>
+            <div class="happia-steps-timeline">
+                <div class="steps-connecting-line"></div>
+                <div class="steps-container">
+                    <!-- Step 1 -->
+                    <div class="step-item">
+                        <div class="step-badge">1</div>
+                        <div class="step-icon"><iconify-icon icon="solar:upload-track-bold-duotone"></iconify-icon></div>
+                        <h4>Subes un documento</h4>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="step-item">
+                        <div class="step-badge">2</div>
+                        <div class="step-icon"><iconify-icon icon="solar:programming-bold-duotone"></iconify-icon></div>
+                        <h4>La inteligencia artificial lo interpreta</h4>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="step-item">
+                        <div class="step-badge">3</div>
+                        <div class="step-icon"><iconify-icon icon="solar:heart-pulse-bold-duotone"></iconify-icon></div>
+                        <h4>Comprende tu situación de salud</h4>
+                    </div>
+                    <!-- Step 4 -->
+                    <div class="step-item">
+                        <div class="step-badge">4</div>
+                        <div class="step-icon"><iconify-icon icon="solar:magic-stick-bold-duotone"></iconify-icon></div>
+                        <h4>Genera recomendaciones personalizadas</h4>
+                    </div>
+                    <!-- Step 5 -->
+                    <div class="step-item">
+                        <div class="step-badge">5</div>
+                        <div class="step-icon"><iconify-icon icon="solar:users-group-two-rounded-bold-duotone"></iconify-icon></div>
+                        <h4>Te conecta con el prestador más conveniente</h4>
+                    </div>
+                    <!-- Step 6 -->
+                    <div class="step-item">
+                        <div class="step-badge">6</div>
+                        <div class="step-icon"><iconify-icon icon="solar:cart-large-bold-duotone"></iconify-icon></div>
+                        <h4>Facilita la compra de medicamentos</h4>
+                    </div>
+                    <!-- Step 7 -->
+                    <div class="step-item">
+                        <div class="step-badge">7</div>
+                        <div class="step-icon"><iconify-icon icon="solar:graph-up-bold-duotone"></iconify-icon></div>
+                        <h4>Hace seguimiento a tus parámetros críticos</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Antes vs Después Columns -->
+        <div class="before-after-grid fade-up" style="margin-top: 80px;">
+            <!-- Column 1: Antes -->
+            <div class="before-col glass-card">
+                <div class="col-heading before-heading">
+                    <iconify-icon icon="solar:close-circle-bold" class="heading-icon"></iconify-icon>
+                    <h3>Antes</h3>
+                </div>
+                <ul class="before-after-list">
+                    <li>
+                        <iconify-icon icon="solar:close-circle-bold" class="list-bullet-before"></iconify-icon>
+                        <span>Información dispersa</span>
+                    </li>
+                    <li>
+                        <iconify-icon icon="solar:close-circle-bold" class="list-bullet-before"></iconify-icon>
+                        <span>No entiendo mis resultados</span>
+                    </li>
+                    <li>
+                        <iconify-icon icon="solar:close-circle-bold" class="list-bullet-before"></iconify-icon>
+                        <span>No sé qué beneficios tengo</span>
+                    </li>
+                    <li>
+                        <iconify-icon icon="solar:close-circle-bold" class="list-bullet-before"></iconify-icon>
+                        <span>Pago de más</span>
+                    </li>
+                    <li>
+                        <iconify-icon icon="solar:close-circle-bold" class="list-bullet-before"></iconify-icon>
+                        <span>Olvido controles</span>
+                    </li>
+                    <li>
+                        <iconify-icon icon="solar:close-circle-bold" class="list-bullet-before"></iconify-icon>
+                        <span>Tomo decisiones con poca información</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- Column 2: Después -->
+            <div class="after-col glass-card">
+                <div class="col-heading after-heading">
+                    <iconify-icon icon="solar:check-circle-bold" class="heading-icon"></iconify-icon>
+                    <h3>Después</h3>
+                </div>
+                <ul class="before-after-list">
+                    <li>
+                        <iconify-icon icon="solar:check-circle-bold" class="list-bullet-after"></iconify-icon>
+                        <span>Toda mi información organizada</span>
+                    </li>
+                    <li>
+                        <iconify-icon icon="solar:check-circle-bold" class="list-bullet-after"></iconify-icon>
+                        <span>Comprendo mejor mi salud</span>
+                    </li>
+                    <li>
+                        <iconify-icon icon="solar:check-circle-bold" class="list-bullet-after"></iconify-icon>
+                        <span>Aprovecho todos mis beneficios</span>
+                    </li>
+                    <li>
+                        <iconify-icon icon="solar:check-circle-bold" class="list-bullet-after"></iconify-icon>
+                        <span>Pago menos por las mismas prestaciones</span>
+                    </li>
+                    <li>
+                        <iconify-icon icon="solar:check-circle-bold" class="list-bullet-after"></iconify-icon>
+                        <span>Recibo recordatorios oportunos</span>
+                    </li>
+                    <li>
+                        <iconify-icon icon="solar:check-circle-bold" class="list-bullet-after"></iconify-icon>
+                        <span>Tomo decisiones informadas</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- B2B corporate section -->
+        <div class="happia-b2b-header text-center fade-up" style="margin-top: 100px; margin-bottom: 56px;">
+            <h2 class="section-title">También transforma la salud de <br><span>empresas y aseguradoras</span></h2>
+        </div>
+        <div class="happia-b2b-grid fade-up">
+            <!-- Card 1 -->
+            <div class="happia-b2b-card glass-card">
+                <div class="b2b-card-icon-wrap icon-red-b2b">
+                    <iconify-icon icon="solar:danger-triangle-bold-duotone"></iconify-icon>
+                </div>
+                <div class="b2b-card-text">
+                    <h3>Reduce la siniestralidad</h3>
+                    <p>Interviniendo antes de que los problemas se transformen en eventos de alto costo.</p>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="happia-b2b-card glass-card">
+                <div class="b2b-card-icon-wrap icon-blue-b2b">
+                    <iconify-icon icon="solar:calendar-mark-bold-duotone"></iconify-icon>
+                </div>
+                <div class="b2b-card-text">
+                    <h3>Mejora la adherencia</h3>
+                    <p>Recordatorios, educación y seguimiento personalizado aumentan el cumplimiento de tratamientos y controles.</p>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="happia-b2b-card glass-card">
+                <div class="b2b-card-icon-wrap icon-green-b2b">
+                    <iconify-icon icon="solar:verified-check-bold-duotone"></iconify-icon>
+                </div>
+                <div class="b2b-card-text">
+                    <h3>Optimiza beneficios</h3>
+                    <p>Promueve el uso de prestadores preferentes, GES, convenios y telemedicina ya disponibles.</p>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="happia-b2b-card glass-card">
+                <div class="b2b-card-icon-wrap icon-purple-b2b">
+                    <iconify-icon icon="solar:bill-list-bold-duotone"></iconify-icon>
+                </div>
+                <div class="b2b-card-text">
+                    <h3>Reduce costos</h3>
+                    <p>Medicamentos. Exámenes. Hospitalizaciones evitables.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     TESTIMONIOS — CAROUSEL
+════════════════════════════════════════════════════════════ -->
+<section class="testimonials-section section" id="testimonios">
+    <div class="container">
+
+        <!-- Header -->
+        <div class="test-carousel-header fade-up">
+            <div>
+                <span class="section-label">Testimonios</span>
+                <h2 class="section-title">Lo que dicen<br><span>nuestros clientes</span></h2>
+            </div>
+            <!-- Prev / Next buttons -->
+            <div class="test-carousel-nav">
+                <button class="tc-nav-btn" id="tc-prev" onclick="carouselPrev()" aria-label="Anterior">
+                    <iconify-icon icon="solar:alt-arrow-left-linear"></iconify-icon>
+                </button>
+                <button class="tc-nav-btn" id="tc-next" onclick="carouselNext()" aria-label="Siguiente">
+                    <iconify-icon icon="solar:alt-arrow-right-linear"></iconify-icon>
+                </button>
+            </div>
+        </div>
+
+        <!-- Carousel track wrapper -->
+        <div class="test-carousel-outer fade-up fade-up-d1">
+            <div class="test-carousel-track" id="tc-track">
+
+                <!-- Slide 1 -->
+                <div class="tc-slide">
+                    <div class="tc-card">
+                        <div class="tc-card-top">
+                            <div class="tc-profile-header">
+                                <img class="tc-avatar" src="https://happ.aurealab.cl/wp-content/uploads/ac_assets/responsive_testemonial_carousel/user.jpg" alt="Gerente de Beneficios">
+                                <div class="tc-author-info">
+                                    <h5>Alex Martínez</h5>
+                                    <span>Gerente de Beneficios · Aseguradora</span>
+                                </div>
+                            </div>
+                            <div class="tc-stars">
+                                <iconify-icon icon="solar:star-bold"></iconify-icon>
+                                <iconify-icon icon="solar:star-bold"></iconify-icon>
+                                <iconify-icon icon="solar:star-bold"></iconify-icon>
+                                <iconify-icon icon="solar:star-bold"></iconify-icon>
+                                <iconify-icon icon="solar:star-bold"></iconify-icon>
+                            </div>
+                        </div>
+                        <p class="tc-text">"happIA facilita que las personas comprendan sus resultados y aprovechen sus beneficios de salud. La experiencia del usuario mejora desde el primer día"</p>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="tc-slide">
+                    <div class="tc-card">
+                        <div class="tc-card-top">
+                            <div class="tc-profile-header">
+                                <img class="tc-avatar" src="https://happ.aurealab.cl/wp-content/uploads/ac_assets/responsive_testemonial_carousel/userpics/1.jpg" alt="Gerente Personas">
+                                <div class="tc-author-info">
+                                    <h5>Ron López</h5>
+                                    <span>Gerente Personas · Sector Industrial</span>
+                                </div>
+                            </div>
+                            <div class="tc-stars">
+                                <iconify-icon icon="solar:star-bold"></iconify-icon>
+                                <iconify-icon icon="solar:star-bold"></iconify-icon>
+                                <iconify-icon icon="solar:star-bold"></iconify-icon>
+                                <iconify-icon icon="solar:star-bold"></iconify-icon>
+                                <iconify-icon icon="solar:star-bold"></iconify-icon>
+                            </div>
+                        </div>
+                        <p class="tc-text">"La plataforma nos permitió anticiparnos a riesgos y mejorar la experiencia de nuestros colaboradores"</p>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="tc-slide">
+                    <div class="tc-card">
+                        <div class="tc-card-top">
+                            <div class="tc-profile-header">
+                                <img class="tc-avatar" src="https://happ.aurealab.cl/wp-content/uploads/ac_assets/responsive_testemonial_carousel/userpics/3.jpg" alt="Gerente Recursos Humanos">
+                                <div class="tc-author-info">
+                                    <h5>Kasey Torres</h5>
+                                    <span>Gerente Recursos Humanos · Empresa del sector logístico</span>
+                                </div>
+                            </div>
+                            <div class="tc-stars">
+                                <iconify-icon icon="solar:star-bold"></iconify-icon>
+                                <iconify-icon icon="solar:star-bold"></iconify-icon>
+                                <iconify-icon icon="solar:star-bold"></iconify-icon>
+                                <iconify-icon icon="solar:star-bold"></iconify-icon>
+                                <iconify-icon icon="solar:star-bold"></iconify-icon>
+                            </div>
+                        </div>
+                        <p class="tc-text">"Más que un proveedor, encontramos un socio tecnológico que nos ayuda a impulsar una cultura preventiva basada en datos y acompañamiento continuo."</p>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="tc-slide">
+                    <div class="tc-card">
+                        <div class="tc-card-top">
+                            <div class="tc-profile-header">
+                                <img class="tc-avatar" src="https://happ.aurealab.cl/wp-content/uploads/ac_assets/responsive_testemonial_carousel/userpics/4.jpg" alt="Gerente de Personas">
+                                <div class="tc-author-info">
+                                    <h5>Amber Rodríguez</h5>
+                                    <span>Gerente de Personas · Empresa del sector industria</span>
+                                </div>
+                            </div>
+                            <div class="tc-stars">
+                                <iconify-icon icon="solar:star-bold"></iconify-icon>
+                                <iconify-icon icon="solar:star-bold"></iconify-icon>
+                                <iconify-icon icon="solar:star-bold"></iconify-icon>
+                                <iconify-icon icon="solar:star-bold"></iconify-icon>
+                                <iconify-icon icon="solar:star-bold"></iconify-icon>
+                            </div>
+                        </div>
+                        <p class="tc-text">"Implementar happ cambió la forma en que gestionamos la salud preventiva. Hoy contamos con información oportuna para actuar antes de que los problemas aparezcan"</p>
+                    </div>
+                </div>
+
+                <!-- Slide 5 -->
+                <div class="tc-slide">
+                    <div class="tc-card">
+                        <div class="tc-card-top">
+                            <div class="tc-profile-header">
+                                <img class="tc-avatar" src="https://happ.aurealab.cl/wp-content/uploads/ac_assets/responsive_testemonial_carousel/userpics/2.jpg" alt="Subgerente de Personas">
+                                <div class="tc-author-info">
+                                    <h5>Mateo Gómez</h5>
+                                    <span>Subgerente de Personas · Empresa del sector retail</span>
+                                </div>
+                            </div>
+                            <div class="tc-stars">
+                                <iconify-icon icon="solar:star-bold"></iconify-icon>
+                                <iconify-icon icon="solar:star-bold"></iconify-icon>
+                                <iconify-icon icon="solar:star-bold"></iconify-icon>
+                                <iconify-icon icon="solar:star-bold"></iconify-icon>
+                                <iconify-icon icon="solar:star-bold"></iconify-icon>
+                            </div>
+                        </div>
+                        <p class="tc-text">"La experiencia fue muy simple para nuestros colaboradores. Los operativos fueron rápidos, la plataforma es intuitiva y el seguimiento posterior marcó una gran diferencia"</p>
+                    </div>
+                </div>
+
+                <!-- Slide 6 -->
+                <div class="tc-slide">
+                    <div class="tc-card">
+                        <div class="tc-card-top">
+                            <div class="tc-profile-header">
+                                <img class="tc-avatar" src="https://happ.aurealab.cl/wp-content/uploads/ac_assets/responsive_testemonial_carousel/userpics/1.jpg" alt="Líder de Bienestar">
+                                <div class="tc-author-info">
+                                    <h5>Sofía Plaza</h5>
+                                    <span>Líder de Bienestar · Empresa de servicios</span>
+                                </div>
+                            </div>
+                            <div class="tc-stars">
+                                <iconify-icon icon="solar:star-bold"></iconify-icon>
+                                <iconify-icon icon="solar:star-bold"></iconify-icon>
+                                <iconify-icon icon="solar:star-bold"></iconify-icon>
+                                <iconify-icon icon="solar:star-bold"></iconify-icon>
+                                <iconify-icon icon="solar:star-bold"></iconify-icon>
+                            </div>
+                        </div>
+                        <p class="tc-text">"Lo que más valoramos fue integrar operativos, resultados y seguimiento en una sola plataforma. Eso nos permitió tomar mejores decisiones como organización."</p>
+                    </div>
+                </div>
+
+            </div><!-- end track -->
+        </div><!-- end outer -->
+
+        <!-- Dot indicators -->
+        <div class="tc-dots" id="tc-dots">
+            <button class="tc-dot active" onclick="carouselGoTo(0)" aria-label="Slide 1"></button>
+            <button class="tc-dot" onclick="carouselGoTo(1)" aria-label="Slide 2"></button>
+            <button class="tc-dot" onclick="carouselGoTo(2)" aria-label="Slide 3"></button>
+            <button class="tc-dot" onclick="carouselGoTo(3)" aria-label="Slide 4"></button>
+            <button class="tc-dot" onclick="carouselGoTo(4)" aria-label="Slide 5"></button>
+            <button class="tc-dot" onclick="carouselGoTo(5)" aria-label="Slide 6"></button>
+        </div>
+
+    </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     CONFÍA EN HAPPIA — LOGOS CAROUSEL
+════════════════════════════════════════════════════════════ -->
+<section class="logos-section section-sm">
+    <div class="container">
+        <div class="text-center fade-up" style="margin-bottom: 32px;">
+            <span class="section-label" style="margin-bottom: 4px;">Confía en</span>
+            <h2 class="section-title" style="font-size: 28px; font-weight: 800; margin: 0;"><span>happIA</span></h2>
+        </div>
+        
+        <!-- Scrolling logo track -->
+        <div class="logo-carousel-wrap fade-up">
+            <div class="logo-track">
+                <!-- Double the list of images to allow infinite seamless scrolling -->
+                <div class="logo-slide"><img src="https://happ.aurealab.cl/wp-content/uploads/2026/07/Diseno-sin-titulo-2026-07-07T122236.865.jpg" alt="Partner Logo 1"></div>
+                <div class="logo-slide"><img src="https://happ.aurealab.cl/wp-content/uploads/2026/07/Diseno-sin-titulo-2026-07-07T121832.471.jpg" alt="Partner Logo 2"></div>
+                <div class="logo-slide"><img src="https://happ.aurealab.cl/wp-content/uploads/2026/07/Diseno-sin-titulo-2026-07-07T122723.683.jpg" alt="Partner Logo 3"></div>
+                <div class="logo-slide"><img src="https://happ.aurealab.cl/wp-content/uploads/2026/07/Diseno-sin-titulo-2026-07-07T122845.846.jpg" alt="Partner Logo 4"></div>
+                <div class="logo-slide"><img src="https://happ.aurealab.cl/wp-content/uploads/2026/07/Diseno-sin-titulo-2026-07-07T122947.832.jpg" alt="Partner Logo 5"></div>
+                <div class="logo-slide"><img src="https://happ.aurealab.cl/wp-content/uploads/2026/07/Diseno-sin-titulo-2026-07-07T123102.240.jpg" alt="Partner Logo 6"></div>
+                <div class="logo-slide"><img src="https://happ.aurealab.cl/wp-content/uploads/2026/07/Diseno-sin-titulo-2026-07-07T123455.121.jpg" alt="Partner Logo 7"></div>
+                <div class="logo-slide"><img src="https://happ.aurealab.cl/wp-content/uploads/2026/07/Diseno-sin-titulo-2026-07-07T123640.932.jpg" alt="Partner Logo 8"></div>
+                
+                <!-- Repeat for loop -->
+                <div class="logo-slide"><img src="https://happ.aurealab.cl/wp-content/uploads/2026/07/Diseno-sin-titulo-2026-07-07T122236.865.jpg" alt="Partner Logo 1"></div>
+                <div class="logo-slide"><img src="https://happ.aurealab.cl/wp-content/uploads/2026/07/Diseno-sin-titulo-2026-07-07T121832.471.jpg" alt="Partner Logo 2"></div>
+                <div class="logo-slide"><img src="https://happ.aurealab.cl/wp-content/uploads/2026/07/Diseno-sin-titulo-2026-07-07T122723.683.jpg" alt="Partner Logo 3"></div>
+                <div class="logo-slide"><img src="https://happ.aurealab.cl/wp-content/uploads/2026/07/Diseno-sin-titulo-2026-07-07T122845.846.jpg" alt="Partner Logo 4"></div>
+                <div class="logo-slide"><img src="https://happ.aurealab.cl/wp-content/uploads/2026/07/Diseno-sin-titulo-2026-07-07T122947.832.jpg" alt="Partner Logo 5"></div>
+                <div class="logo-slide"><img src="https://happ.aurealab.cl/wp-content/uploads/2026/07/Diseno-sin-titulo-2026-07-07T123102.240.jpg" alt="Partner Logo 6"></div>
+                <div class="logo-slide"><img src="https://happ.aurealab.cl/wp-content/uploads/2026/07/Diseno-sin-titulo-2026-07-07T123455.121.jpg" alt="Partner Logo 7"></div>
+                <div class="logo-slide"><img src="https://happ.aurealab.cl/wp-content/uploads/2026/07/Diseno-sin-titulo-2026-07-07T123640.932.jpg" alt="Partner Logo 8"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     PLATAFORMA DIGITAL
+════════════════════════════════════════════════════════════ -->
+<!-- ══════════════════════════════════════════════════════════
+     PLATAFORMA DIGITAL — 3 COLUMNAS
+════════════════════════════════════════════════════════════ -->
+<section class="platform-section section" id="plataforma">
+    <div class="container">
+        
+        <!-- Centered Header -->
+        <div class="platform-section-header fade-up" style="text-align: center; margin-bottom: 56px;">
+            <span class="section-label">Plataforma Digital</span>
+            <h2 class="section-title">La salud del paciente, <br><span>en un solo lugar</span></h2>
+        </div>
+
+        <div class="platform-3col-layout">
+            
+            <!-- Left Column: Cards 1, 2, 3 -->
+            <div class="platform-col col-left fade-up">
+                <!-- Card 1 -->
+                <div class="platform-3col-card">
+                    <div class="p-card-icon robot-blue">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" color="#0f4159" fill="none" viewBox="0 0 24 24"><path opacity="0.5" d="M2.08368 2.7512C2.22106 2.36044 2.64921 2.15503 3.03998 2.29242L3.34138 2.39838C3.95791 2.61511 4.48154 2.79919 4.89363 3.00139C5.33426 3.21759 5.71211 3.48393 5.99629 3.89979C6.27827 4.31243 6.39468 4.76515 6.44841 5.26153C6.47247 5.48373 6.48515 5.72967 6.49184 6H17.1301C18.815 6 20.3318 6 20.7757 6.57708C21.2197 7.15417 21.0461 8.02369 20.699 9.76275L20.1992 12.1875C19.8841 13.7164 19.7266 14.4808 19.1748 14.9304C18.6231 15.38 17.8426 15.38 16.2816 15.38H10.9787C8.18979 15.38 6.79534 15.38 5.92894 14.4662C5.06254 13.5523 4.9993 12.5816 4.9993 9.64L4.9993 7.03832C4.9993 6.29837 4.99828 5.80316 4.95712 5.42295C4.91779 5.0596 4.84809 4.87818 4.75783 4.74609C4.66977 4.61723 4.5361 4.4968 4.23288 4.34802C3.91003 4.18961 3.47128 4.03406 2.80367 3.79934L2.54246 3.7075C2.1517 3.57012 1.94629 3.14197 2.08368 2.7512Z" fill="currentColor"></path><path d="M7.5 18C8.32843 18 9 18.6716 9 19.5C9 20.3284 8.32843 21 7.5 21C6.67157 21 6 20.3284 6 19.5C6 18.6716 6.67157 18 7.5 18Z" fill="currentColor"></path><path d="M16.5 18.0001C17.3284 18.0001 18 18.6716 18 19.5001C18 20.3285 17.3284 21.0001 16.5 21.0001C15.6716 21.0001 15 20.3285 15 19.5001C15 18.6716 15.6716 18.0001 16.5 18.0001Z" fill="currentColor"></path><path d="M15.5421 9.51724C15.8278 9.2173 15.8162 8.74256 15.5163 8.4569C15.2163 8.17123 14.7416 8.18281 14.4559 8.48276L12.1419 10.9125L11.5421 10.2828C11.2565 9.98281 10.7817 9.97123 10.4818 10.2569C10.1818 10.5426 10.1703 11.0173 10.4559 11.3172L11.5988 12.5172C11.7403 12.6659 11.9366 12.75 12.1419 12.75C12.3471 12.75 12.5434 12.6659 12.685 12.5172L15.5421 9.51724Z" fill="currentColor"></path></svg>
+                    </div>
+                    <div class="p-card-content">
+                        <h4>Ahorra y paga menos por tus medicamentos junto a happ.</h4>
+                        <p>happIA buscará el mejor precio para tus medicamentos</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="platform-3col-card">
+                    <div class="p-card-icon phone-green">
+                        <iconify-icon icon="solar:smartphone-bold"></iconify-icon>
+                    </div>
+                    <div class="p-card-content">
+                        <h4>Acceso fácil y rápido a exámenes y recetas desde el celular.</h4>
+                        <p>Ya no necesitas buscar papeles, claves, correos: todo en un solo lugar.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="platform-3col-card">
+                    <div class="p-card-icon doc-darkblue">
+                        <iconify-icon icon="solar:document-text-bold"></iconify-icon>
+                    </div>
+                    <div class="p-card-content">
+                        <h4>Sube tus exámenes y consulta los resultados de tus operativos.</h4>
+                        <p>La plataforma los interpreta con IA y ayuda a entenderlos de forma clara.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Center Column: Showcase Image -->
+            <div class="platform-col col-center fade-up fade-up-d1">
+                <div class="platform-showcase-wrap">
+                    <div class="platform-showcase-glow"></div>
+                    <img src="image_78.png" alt="Platform showcase" loading="lazy">
+                </div>
+            </div>
+
+            <!-- Right Column: Cards 1, 2, 3 -->
+            <div class="platform-col col-right fade-up fade-up-d2">
+                <!-- Card 1 -->
+                <div class="platform-3col-card">
+                    <div class="p-card-icon bell-violet">
+                        <iconify-icon icon="solar:bell-bing-bold"></iconify-icon>
+                    </div>
+                    <div class="p-card-content">
+                        <h4>Recordatorios personalizados para próximos controles.</h4>
+                        <p>No más olvidos: Te guía según edad, diagnóstico y estándares médicos.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="platform-3col-card">
+                    <div class="p-card-icon click-blue">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" color="#0f4159" fill="none" viewBox="0 0 24 24"><path opacity="0.5" d="M3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447Z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M16.4697 1.46967C16.7626 1.17678 17.2374 1.17678 17.5303 1.46967L22.5303 6.46967C22.8232 6.76256 22.8232 7.23744 22.5303 7.53033L17.5303 12.5303C17.2374 12.8232 16.7626 12.8232 16.4697 12.5303C16.1768 12.2374 16.1768 11.7626 16.4697 11.4697L20.1893 7.75H14C12.4485 7.75 11.5328 8.50701 11.212 8.82933L11.0211 9.02115L10.8293 9.21205C10.507 9.5328 9.75 10.4485 9.75 12V15C9.75 15.4142 9.41421 15.75 9 15.75C8.58579 15.75 8.25 15.4142 8.25 15V12C8.25 9.91621 9.27703 8.64062 9.77125 8.1488L9.96049 7.96049L10.1488 7.77125C10.6406 7.27703 11.9162 6.25 14 6.25H20.1893L16.4697 2.53033C16.1768 2.23744 16.1768 1.76256 16.4697 1.46967Z" fill="currentColor"></path></svg>
+                    </div>
+                    <div class="p-card-content">
+                        <h4>Comparte resultados fácilmente con un doctor o familiar.</h4>
+                        <p>Con un clic, permite al usuario reenviar o compartir documentos</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="platform-3col-card">
+                    <div class="p-card-icon bell-yellow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" color="#0f4159" fill="none" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M20.8293 10.7154L20.3116 12.6473C19.7074 14.9024 19.4052 16.0299 18.7203 16.7612C18.1795 17.3386 17.4796 17.7427 16.7092 17.9223C16.6129 17.9448 16.5152 17.9621 16.415 17.9744C15.4999 18.0873 14.3834 17.7881 12.3508 17.2435C10.0957 16.6392 8.96815 16.3371 8.23687 15.6522C7.65945 15.1114 7.25537 14.4115 7.07573 13.641C6.84821 12.6652 7.15033 11.5377 7.75458 9.28263L8.27222 7.35077C8.3591 7.02654 8.43979 6.7254 8.51621 6.44561C8.97128 4.77957 9.27709 3.86298 9.86351 3.23687C10.4043 2.65945 11.1042 2.25537 11.8747 2.07573C12.8504 1.84821 13.978 2.15033 16.2331 2.75458C18.4881 3.35883 19.6157 3.66095 20.347 4.34587C20.9244 4.88668 21.3285 5.58657 21.5081 6.35703C21.7356 7.3328 21.4335 8.46034 20.8293 10.7154ZM11.0524 9.80589C11.1596 9.40579 11.5709 9.16835 11.971 9.27556L16.8006 10.5697C17.2007 10.6769 17.4381 11.0881 17.3309 11.4882C17.2237 11.8883 16.8125 12.1257 16.4124 12.0185L11.5827 10.7244C11.1826 10.6172 10.9452 10.206 11.0524 9.80589ZM10.2756 12.7033C10.3828 12.3032 10.794 12.0658 11.1941 12.173L14.0919 12.9495C14.492 13.0567 14.7294 13.4679 14.6222 13.868C14.515 14.2681 14.1038 14.5056 13.7037 14.3984L10.8059 13.6219C10.4058 13.5147 10.1683 13.1034 10.2756 12.7033Z" fill="currentColor"></path><path opacity="0.5" d="M16.4149 17.9745C16.2064 18.6128 15.8398 19.1903 15.347 19.6519C14.6157 20.3368 13.4881 20.6389 11.2331 21.2432C8.97798 21.8474 7.85044 22.1496 6.87466 21.922C6.10421 21.7424 5.40432 21.3383 4.86351 20.7609C4.17859 20.0296 3.87647 18.9021 3.27222 16.647L2.75458 14.7152C2.15033 12.4601 1.84821 11.3325 2.07573 10.3568C2.25537 9.5863 2.65945 8.88641 3.23687 8.3456C3.96815 7.66068 5.09569 7.35856 7.35077 6.75431C7.7774 6.64 8.16369 6.53649 8.51621 6.44534C8.51618 6.44545 8.51624 6.44524 8.51621 6.44534C8.43979 6.72513 8.3591 7.02657 8.27222 7.35081L7.75458 9.28266C7.15033 11.5377 6.84821 12.6653 7.07573 13.6411C7.25537 14.4115 7.65945 15.1114 8.23687 15.6522C8.96815 16.3371 10.0957 16.6393 12.3508 17.2435C14.3833 17.7881 15.4999 18.0873 16.4149 17.9745Z" fill="currentColor"></path></svg>
+                    </div>
+                    <div class="p-card-content">
+                        <h4>Todo explicado en lenguaje simple y visual</h4>
+                        <p>Educa para que la toma de decisiones sea informada y mejore la adherencia</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<!-- ══════════════════════════════════════════════════════════
+     CONTACTO
+════════════════════════════════════════════════════════════ -->
+<section class="contact-section section" id="contacto">
+    <div class="container">
+        <div class="contact-inner">
+            <!-- INFO -->
+            <div class="contact-info fade-up">
+                <span class="contact-info-label">Contáctanos</span>
+                <h2 class="section-title">¿Quieres agendar un operativo<br><span>en tu empresa?</span></h2>
+                <p>Déjanos tus datos y diseñaremos un programa preventivo a tu medida. Nos pondremos en contacto a la brevedad para coordinar tu operativo de salud.</p>
+                <div class="contact-cards">
+                    <div class="contact-card">
+                        <div class="contact-card-icon"><iconify-icon icon="solar:phone-bold"></iconify-icon></div>
+                        <div class="contact-card-text">
+                            <h4>Teléfono / WhatsApp</h4>
+                            <p>+56 9 1234 5678</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-card-icon"><iconify-icon icon="solar:letter-bold"></iconify-icon></div>
+                        <div class="contact-card-text">
+                            <h4>Email</h4>
+                            <p>contacto@happ.cl</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-card-icon"><iconify-icon icon="solar:map-point-bold"></iconify-icon></div>
+                        <div class="contact-card-text">
+                            <h4>Cobertura</h4>
+                            <p>Operamos en todo Chile</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FORM -->
+            <div class="contact-form-wrap fade-up fade-up-d2">
+                <h3>Solicitar Información</h3>
+                <p>Completa el formulario y un especialista te contactará en menos de 24 horas hábiles.</p>
+                <form id="contact-form" onsubmit="handleFormSubmit(event)">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="f-name">Nombre</label>
+                            <input type="text" id="f-name" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="f-company">Empresa</label>
+                            <input type="text" id="f-company" placeholder="Nombre de la empresa" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="f-email">Email corporativo</label>
+                            <input type="email" id="f-email" placeholder="nombre@empresa.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="f-phone">Teléfono</label>
+                            <input type="tel" id="f-phone" placeholder="+56 9...">
+                        </div>
+                        <div class="form-group full">
+                            <label for="f-service">Servicio de interés</label>
+                            <select id="f-service">
+                                <option value="">Selecciona un servicio...</option>
+                                <option>Evaluación Cardiovascular</option>
+                                <option>Evaluación Nutricional</option>
+                                <option>Evaluación Musculoesquelética</option>
+                                <option>Screening Auditivo</option>
+                                <option>Recuperación y Bienestar</option>
+                                <option>Múltiples servicios</option>
+                            </select>
+                        </div>
+                        <div class="form-group full">
+                            <label for="f-message">Mensaje</label>
+                            <textarea id="f-message" placeholder="Ej: Necesito un operativo para 80 personas en Santiago..."></textarea>
+                        </div>
+                        <button type="submit" class="form-submit-btn" id="form-submit-btn">
+                            Enviar Solicitud
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════════════════ -->
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="nav-logo" aria-label="Happ">
+                    <img src="https://happ.aurealab.cl/wp-content/uploads/2021/12/LOGO-HAPP-sin-fondo.png" alt="Happ Logo" style="filter: brightness(10);">
+                </a>
+                <p style="margin-top:16px;">Digitalizamos y potenciamos la salud preventiva corporativa, integrando datos clínicos e inteligencia artificial para cuidar mejor a tus colaboradores.</p>
+                <div class="social-row">
+                    <a href="#" class="social-btn" aria-label="Instagram"><iconify-icon icon="simple-icons:instagram"></iconify-icon></a>
+                    <a href="#" class="social-btn" aria-label="LinkedIn"><iconify-icon icon="simple-icons:linkedin"></iconify-icon></a>
+                    <a href="#" class="social-btn" aria-label="Facebook"><iconify-icon icon="simple-icons:facebook"></iconify-icon></a>
+                    <a href="#" class="social-btn" aria-label="WhatsApp"><iconify-icon icon="simple-icons:whatsapp"></iconify-icon></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Empresa</h4>
+                <a href="#home">Home</a>
+                <a href="#que-hacemos">¿Qué Hacemos?</a>
+                <a href="#que-hacemos">¿Quiénes Somos?</a>
+                <a href="#">Blog</a>
+            </div>
+            <div class="footer-col">
+                <h4>Servicios</h4>
+                <a href="#servicios">Evaluación Cardiovascular</a>
+                <a href="#servicios">Evaluación Nutricional</a>
+                <a href="#servicios">Screening Auditivo</a>
+                <a href="#servicios">Bienestar Laboral</a>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <a href="#">Términos y Condiciones</a>
+                <a href="#">Política de Privacidad</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Happ. Todos los derechos reservados.</p>
+            <div class="footer-tech">
+                <iconify-icon icon="solar:heart-bold"></iconify-icon>
+                Tecnología e Inteligencia Médica
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Floating Robot Chat Bot -->
+<a href="#contacto" class="robot-float-btn" aria-label="Asistente happIA">
+    <img src="robot.png" alt="happIA Robot">
+</a>
+
+
+<!-- ══════════════════════════════════════════════════════════
+     SCRIPTS
+════════════════════════════════════════════════════════════ -->
+<script>
+/* --- NAV MOBILE ----------------------------------------- */
+function toggleMobileMenu() {
+    const menu = document.getElementById('mobile-menu');
+    menu.classList.toggle('open');
+}
+function closeMobileMenu() {
+    document.getElementById('mobile-menu').classList.remove('open');
+}
+
+/* --- ACCORDION ------------------------------------------ */
+function toggleAcc(id) {
+    const item = document.getElementById(id);
+    const isOpen = item.classList.contains('open');
+
+    // Close all
+    document.querySelectorAll('.acc-item').forEach(i => i.classList.remove('open'));
+    document.querySelectorAll('.acc-trigger').forEach(t => t.setAttribute('aria-expanded', 'false'));
+
+    // Open clicked if it wasn't open
+    if (!isOpen) {
+        item.classList.add('open');
+        item.querySelector('.acc-trigger').setAttribute('aria-expanded', 'true');
+    }
+}
+
+/* --- CONTACT FORM --------------------------------------- */
+function handleFormSubmit(e) {
+    e.preventDefault();
+    const btn = document.getElementById('form-submit-btn');
+    btn.innerHTML = '<iconify-icon icon="line-md:loading-twotone-loop" style="vertical-align:middle;margin-right:8px;font-size:18px;"></iconify-icon> Enviando...';
+    btn.disabled = true;
+    setTimeout(() => {
+        btn.innerHTML = '<iconify-icon icon="solar:check-circle-bold" style="vertical-align:middle;margin-right:8px;font-size:18px;"></iconify-icon> ¡Solicitud Enviada!';
+        btn.style.background = '#00C28E';
+        document.getElementById('contact-form').reset();
+        setTimeout(() => {
+            btn.innerHTML = 'Enviar Solicitud';
+            btn.style.background = '';
+            btn.disabled = false;
+        }, 3000);
+    }, 1500);
+}
+
+/* --- SCROLL ANIMATIONS (IntersectionObserver) ----------- */
+const fadeEls = document.querySelectorAll('.fade-up');
+const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+}, { threshold: 0.12 });
+fadeEls.forEach(el => obs.observe(el));
+
+/* --- NAV SHADOW ON SCROLL ------------------------------- */
+window.addEventListener('scroll', () => {
+    const nav = document.getElementById('main-nav');
+    nav.style.boxShadow = window.scrollY > 10 ? '0 4px 32px rgba(0,72,255,0.13)' : '0 2px 20px rgba(0,72,255,0.07)';
+});
+
+/* --- CLOSE MOBILE MENU ON OUTSIDE CLICK ---------------- */
+document.addEventListener('click', (e) => {
+    const menu = document.getElementById('mobile-menu');
+    const btn = document.getElementById('hamburger-btn');
+    if (!menu.contains(e.target) && !btn.contains(e.target)) {
+        menu.classList.remove('open');
+    }
+});
+
+/* --- TESTIMONIALS CAROUSEL ----------------------------- */
+(function() {
+    const track   = document.getElementById('tc-track');
+    const outer   = track ? track.parentElement : null;
+    const dots    = document.querySelectorAll('.tc-dot');
+    const slides  = document.querySelectorAll('.tc-slide');
+    if (!track || !slides.length) return;
+
+    let current = 0;
+    let autoplayTimer = null;
+    const TOTAL = slides.length;
+    const GAP   = 28; // must match CSS gap px
+
+    function getItemsPerView() {
+        if (window.innerWidth > 992) return 3;
+        if (window.innerWidth > 600) return 2;
+        return 1;
+    }
+
+    /* Set slide widths based on container width and items per view */
+    function setWidths() {
+        const itemsPerView = getItemsPerView();
+        const outerW = outer.clientWidth;
+        const slideW = (outerW - (itemsPerView - 1) * GAP) / itemsPerView;
+        slides.forEach(s => { s.style.width = slideW + 'px'; });
+    }
+
+    function goTo(idx, animated = true) {
+        if (!animated) track.style.transition = 'none';
+        else track.style.transition = '';
+
+        const itemsPerView = getItemsPerView();
+        const maxIdx = TOTAL - itemsPerView;
+        
+        // Loop or cap index
+        if (idx > maxIdx) {
+            current = 0; // Go back to start
+        } else if (idx < 0) {
+            current = maxIdx; // Go to end
+        } else {
+            current = idx;
+        }
+
+        const outerW = outer.clientWidth;
+        const slideW = (outerW - (itemsPerView - 1) * GAP) / itemsPerView;
+        const offset = current * (slideW + GAP);
+        track.style.transform = `translateX(-${offset}px)`;
+
+        // Update dot indicators
+        dots.forEach((d, i) => {
+            d.classList.toggle('active', i === current);
+            // Hide dots that exceed maxIdx
+            if (i > maxIdx) {
+                d.style.display = 'none';
+            } else {
+                d.style.display = 'inline-block';
+            }
+        });
+        
+        if (!animated) requestAnimationFrame(() => { track.style.transition = ''; });
+    }
+
+    function startAutoplay() {
+        stopAutoplay();
+        autoplayTimer = setInterval(() => goTo(current + 1), 5000);
+    }
+    function stopAutoplay() {
+        clearInterval(autoplayTimer);
+    }
+
+    /* Expose globals for onclick handlers */
+    window.carouselNext   = () => { goTo(current + 1); startAutoplay(); };
+    window.carouselPrev   = () => { goTo(current - 1); startAutoplay(); };
+    window.carouselGoTo   = (i) => { goTo(i); startAutoplay(); };
+
+    /* Init */
+    setWidths();
+    goTo(0, false);
+    startAutoplay();
+
+    /* Resize */
+    window.addEventListener('resize', () => { setWidths(); goTo(current, false); });
+
+    /* Pause on hover */
+    outer.addEventListener('mouseenter', stopAutoplay);
+    outer.addEventListener('mouseleave', startAutoplay);
+
+    /* Touch/drag swipe */
+    let startX = 0;
+    outer.addEventListener('touchstart', e => { startX = e.touches[0].clientX; stopAutoplay(); }, { passive: true });
+    outer.addEventListener('touchend', e => {
+        const diff = startX - e.changedTouches[0].clientX;
+        if (Math.abs(diff) > 40) {
+            if (diff > 0) window.carouselNext();
+            else window.carouselPrev();
+        } else {
+            startAutoplay();
+        }
+    }, { passive: true });
+})();
+</script>
+</body>
+</html>
