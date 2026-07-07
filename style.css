@@ -1932,3 +1932,410 @@ body::before {
     }
 }
 
+/* ── HAPP CARE SECTION STYLES ────────────────────────────── */
+.happcare-section {
+    position: relative;
+    overflow: hidden;
+    background: 
+        radial-gradient(circle at center, rgba(255, 255, 255, 0.5) 0%, rgba(245, 248, 255, 0.3) 100%),
+        var(--bg);
+}
+
+/* Background glows specifically for happ Care */
+.happcare-section::before {
+    content: '';
+    position: absolute;
+    top: 25%;
+    right: -10%;
+    width: 50vw;
+    height: 50vw;
+    background: radial-gradient(circle, rgba(0, 194, 142, 0.06) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+/* Intro Grid */
+.happcare-intro-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 48px;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.happcare-intro-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.happcare-metrics-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.metric-card {
+    padding: 24px;
+    border-radius: var(--r-lg);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+.metric-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(0, 114, 255, 0.2);
+}
+.metric-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+.metric-icon.icon-blue { background: rgba(0, 114, 255, 0.08); color: var(--c-blue); }
+.metric-icon.icon-teal { background: rgba(0, 198, 255, 0.08); color: var(--c-cyan); }
+.metric-icon.icon-green { background: rgba(0, 194, 142, 0.08); color: var(--c-green); }
+.metric-icon.icon-orange { background: rgba(255, 140, 66, 0.08); color: var(--c-orange); }
+
+.metric-number {
+    font-size: 28px;
+    font-weight: 850;
+    line-height: 1;
+    background: var(--grad-main);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.metric-label {
+    font-size: 13px;
+    color: var(--txt-sub);
+    line-height: 1.45;
+    font-weight: 500;
+}
+
+/* Challenges Grid */
+.challenges-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+.challenge-card {
+    padding: 28px;
+    border-radius: var(--r-lg);
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    border-left: 3px solid var(--c-red);
+    transition: transform 0.3s ease;
+}
+.challenge-card:hover {
+    transform: translateY(-4px);
+}
+.challenge-icon {
+    font-size: 22px;
+    color: var(--c-red);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+.challenge-card p {
+    font-size: 14px;
+    color: var(--txt-sub);
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+/* Support Grid */
+.support-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+.support-card {
+    padding: 28px;
+    border-radius: var(--r-lg);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+.support-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(0, 194, 142, 0.22);
+}
+.support-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.check-icon-support {
+    color: var(--c-green);
+    font-size: 20px;
+    flex-shrink: 0;
+}
+.support-card h3 {
+    font-size: 16px;
+    font-weight: 750;
+    color: var(--txt-main);
+    line-height: 1.35;
+}
+.support-card p {
+    font-size: 13.5px;
+    color: var(--txt-sub);
+    line-height: 1.5;
+}
+
+/* Steps Timeline (8 steps) */
+.care-steps-timeline {
+    position: relative;
+    width: 100%;
+    margin: 40px 0;
+}
+.care-connecting-line {
+    position: absolute;
+    top: 50px;
+    left: 5%;
+    right: 5%;
+    height: 2px;
+    background: linear-gradient(90deg, var(--c-cyan) 0%, var(--c-green) 50%, var(--c-blue) 100%);
+    z-index: 1;
+}
+.care-steps-grid {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 12px;
+}
+.care-step-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    position: relative;
+}
+.care-step-badge {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--c-green);
+    color: var(--white);
+    font-size: 11px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--bg);
+    box-shadow: 0 2px 8px rgba(0, 194, 142, 0.2);
+}
+.care-step-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: var(--white);
+    border: 2px solid rgba(0, 194, 142, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: var(--c-green);
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+.care-step-item:hover .care-step-icon {
+    transform: translateY(-4px) scale(1.05);
+    border-color: var(--c-cyan);
+}
+.care-step-item h4 {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--txt-main);
+    line-height: 1.3;
+}
+.care-step-item p {
+    font-size: 10.5px;
+    color: var(--txt-sub);
+    line-height: 1.45;
+    margin-top: 2px;
+}
+
+/* Benefits & Callout Container */
+.benefits-layout-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 32px;
+    align-items: stretch;
+}
+.care-benefits-card {
+    padding: 40px;
+    border-radius: var(--r-xl);
+    height: 100%;
+}
+.care-benefits-card h3 {
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 24px;
+    line-height: 1.3;
+    color: var(--txt-main);
+}
+.care-benefits-card h3 span {
+    background: var(--grad-main);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.care-benefits-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.care-benefits-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 15px;
+    color: var(--txt-sub);
+    line-height: 1.5;
+}
+.benefit-bullet-icon {
+    color: var(--c-green);
+    font-size: 20px;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.care-callout-banner {
+    position: relative;
+    padding: 40px;
+    border-radius: var(--r-xl);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.85) 0%, rgba(245, 248, 255, 0.8) 100%);
+    border: 1px solid rgba(0, 114, 255, 0.15);
+    display: flex;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+}
+.callout-glow {
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle, rgba(0, 114, 255, 0.12) 0%, transparent 70%);
+    filter: blur(10px);
+}
+.callout-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: 100%;
+    justify-content: center;
+}
+.callout-main-icon {
+    font-size: 42px;
+    color: var(--c-blue);
+    align-self: flex-start;
+}
+.care-callout-banner p {
+    font-size: 15.5px;
+    color: var(--txt-sub);
+    line-height: 1.7;
+    font-weight: 500;
+}
+
+/* ── HAPP CARE RESPONSIVE ADAPTATIONS ────────────────────── */
+@media (max-width: 992px) {
+    .happcare-intro-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    .happcare-intro-text {
+        align-items: center;
+    }
+    .happcare-metrics-layout {
+        max-width: 540px;
+        margin: 0 auto;
+    }
+    .challenges-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .support-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .care-connecting-line {
+        display: none;
+    }
+    .care-steps-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        max-width: 480px;
+        margin: 0 auto;
+        padding-left: 20px;
+        position: relative;
+    }
+    .care-steps-grid::before {
+        content: '';
+        position: absolute;
+        top: 10px;
+        bottom: 10px;
+        left: 32px;
+        width: 2px;
+        background: linear-gradient(180deg, var(--c-cyan) 0%, var(--c-green) 50%, var(--c-blue) 100%);
+        z-index: 1;
+    }
+    .care-step-item {
+        flex-direction: row;
+        text-align: left;
+        gap: 16px;
+        align-items: flex-start;
+    }
+    .care-step-badge {
+        position: relative;
+        z-index: 3;
+        margin-top: 14px;
+        flex-shrink: 0;
+    }
+    .care-step-icon {
+        position: relative;
+        z-index: 3;
+        width: 48px;
+        height: 48px;
+        font-size: 20px;
+        flex-shrink: 0;
+    }
+    .care-step-item h4 {
+        font-size: 13.5px;
+        margin-top: 14px;
+    }
+    .care-step-item p {
+        margin-top: 6px;
+        font-size: 12px;
+    }
+    .benefits-layout-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}
+@media (max-width: 600px) {
+    .happcare-metrics-layout {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .challenges-grid {
+        grid-template-columns: 1fr;
+    }
+    .support-grid {
+        grid-template-columns: 1fr;
+    }
+    .care-benefits-card {
+        padding: 24px;
+    }
+    .care-callout-banner {
+        padding: 24px;
+    }
+}
+
