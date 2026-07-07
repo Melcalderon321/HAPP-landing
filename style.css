@@ -2102,7 +2102,7 @@ body::before {
     left: 5%;
     right: 5%;
     height: 2px;
-    background: linear-gradient(90deg, var(--c-cyan) 0%, var(--c-green) 50%, var(--c-blue) 100%);
+    background: linear-gradient(90deg, var(--c-cyan) 0%, var(--c-blue) 50%, var(--c-indigo) 100%);
     z-index: 1;
 }
 .care-steps-grid {
@@ -2124,7 +2124,7 @@ body::before {
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    background: var(--c-green);
+    background: var(--c-blue);
     color: var(--white);
     font-size: 11px;
     font-weight: 700;
@@ -2132,19 +2132,19 @@ body::before {
     align-items: center;
     justify-content: center;
     border: 2px solid var(--bg);
-    box-shadow: 0 2px 8px rgba(0, 194, 142, 0.2);
+    box-shadow: 0 2px 8px rgba(0, 114, 255, 0.2);
 }
 .care-step-icon {
     width: 52px;
     height: 52px;
     border-radius: 50%;
     background: var(--white);
-    border: 2px solid rgba(0, 194, 142, 0.12);
+    border: 2px solid rgba(0, 114, 255, 0.12);
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 22px;
-    color: var(--c-green);
+    color: var(--c-blue);
     box-shadow: var(--shadow);
     transition: transform 0.3s ease, border-color 0.3s ease;
 }
@@ -2241,9 +2241,11 @@ body::before {
     justify-content: center;
 }
 .callout-main-icon {
-    font-size: 42px;
-    color: var(--c-blue);
+    width: 90px;
+    height: auto;
     align-self: flex-start;
+    object-fit: contain;
+    margin-bottom: 4px;
 }
 .care-callout-banner p {
     font-size: 15.5px;
@@ -2290,7 +2292,7 @@ body::before {
         bottom: 10px;
         left: 32px;
         width: 2px;
-        background: linear-gradient(180deg, var(--c-cyan) 0%, var(--c-green) 50%, var(--c-blue) 100%);
+        background: linear-gradient(180deg, var(--c-cyan) 0%, var(--c-blue) 50%, var(--c-indigo) 100%);
         z-index: 1;
     }
     .care-step-item {
